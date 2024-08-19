@@ -1,0 +1,66 @@
+@use "./variables" as *;
+// General
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 36px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  font-size: 16px;
+  user-select: none;
+}
+::selection {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+}
+
+// Typography
+h1 {
+  font-size: $heroHeading;
+  font-weight: 900;
+}
+h2 {
+  font-size: $mainHeading;
+  font-weight: 700;
+}
+h3 {
+  font-size: $subHeading;
+  font-weight: bold;
+}
+.large-paragraph {
+  font-size: $largeParagraph;
+  font-weight: 400;
+}
+.small-paragraph {
+  font-size: $smallParagraph;
+  font-weight: 400;
+}
+
+// Colors
+.primary-color {
+  color: $primaryColor;
+}
+.fuchsia-color {
+  color: $fuchsiaColor;
+}
+.paragraph-color {
+  color: $paragraphColor;
+}
+.primary-bg {
+  background-color: $primaryColor;
+}
+.blue-bg {
+  background-color: $blueColor;
+}
+.dark-blue-bg {
+  background-color: $darkBlueColor;
+}
