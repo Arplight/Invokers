@@ -1,11 +1,12 @@
 // Template colors
 $primaryColor: #5380ea;
 $secondaryColor: #ffffff;
-$paragraphColor: #ffffffd5;
+$paragraphLightColor: #ffffffd5;
+$paragraphDarkColor: #475569;
 $blueColor: #12244f;
 $fuchsiaColor: #d91c5e;
 $darkBlueColor: #0a1e40;
-
+$dangerColor: #ff0e0e;
 // template fonts sizes
 $heroHeading: clamp(1rem, 10vw, 1rem);
 $mainHeading: clamp(0.62rem, 10vw, 0.62rem);

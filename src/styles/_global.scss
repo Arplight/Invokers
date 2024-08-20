@@ -49,11 +49,20 @@ h3 {
 .primary-color {
   color: $primaryColor;
 }
+.blue-color {
+  color: $blueColor;
+}
 .fuchsia-color {
   color: $fuchsiaColor;
 }
-.paragraph-color {
-  color: $paragraphColor;
+.paragraph-light {
+  color: $paragraphLightColor;
+}
+.paragraph-dark {
+  color: $paragraphDarkColor;
+}
+.danger-color {
+  color: $dangerColor;
 }
 .primary-bg {
   background-color: $primaryColor;
