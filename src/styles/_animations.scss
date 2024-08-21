@@ -1,0 +1,55 @@
+// Logo animations
+@keyframes lightAnimation {
+  0% {
+    filter: drop-shadow(2px 4px 6px #5380ea36);
+  }
+  50% {
+    filter: drop-shadow(2px 4px 6px #5380ea);
+  }
+  100% {
+    filter: drop-shadow(2px 4px 6px #5380ea36);
+  }
+}
+.hero-logo {
+  animation: lightAnimation 5s ease-in-out infinite;
+}
+
+//mouse animation
+@keyframes mouseAnimation {
+  0% {
+    transform: translateY(-10px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.mouse {
+  animation: mouseAnimation linear 5s infinite;
+}
+//star
+@keyframes starAnimation {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(2px 4px 6px #5380ea36);
+  }
+  50% {
+    transform: scale(1.4);
+    filter: drop-shadow(2px 4px 6px #5380ea);
+  }
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(2px 4px 6px #5380ea36);
+  }
+}
+.star {
+  animation: starAnimation 5s linear infinite;
+}

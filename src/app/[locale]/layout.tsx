@@ -27,8 +27,8 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={nunito.className}>
         <NextIntlClientProvider messages={messages}>
-          {/* {children} */}
-          <Template />
+          {children}
+          {/* <Template /> */}
         </NextIntlClientProvider>
       </body>
     </html>
