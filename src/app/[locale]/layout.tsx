@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
-import Template from "./Template";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import "../../styles/main.scss";
@@ -28,7 +27,6 @@ export default async function RootLayout({
       <body className={nunito.className}>
         <NextIntlClientProvider messages={messages}>
           {children}
-          {/* <Template /> */}
         </NextIntlClientProvider>
       </body>
     </html>

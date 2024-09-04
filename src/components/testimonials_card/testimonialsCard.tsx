@@ -14,7 +14,7 @@ const TestimonialsCard: FC<ITestimonials> = ({
   feedbackLink,
 }) => {
   return (
-    <div className="relative rounded-sm border-2 border-[#ffffff] bg-[#FFFFFF15] p-2 w-[300px] h-[150px]">
+    <div className="relative rounded-sm border-2 border-[#ffffff] bg-[#FFFFFF15] p-2 w-full h-[180px]">
       <a
         href={feedbackLink}
         target="_blank"

@@ -18,8 +18,8 @@ const Service1 = () => {
         <path
           d="M19.7916 33.3333C11.7374 33.3333 5.20825 26.8041 5.20825 18.75C5.20825 10.6958 11.7374 4.16663 19.7916 4.16663C27.8458 4.16663 34.3749 10.6958 34.3749 18.75"
           stroke="white"
-          stroke-width="2"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinejoin="round"
         />
         <path d="M45.8333 18.75H18.75V45.8333H45.8333V18.75Z" fill="white" />
       </mask>

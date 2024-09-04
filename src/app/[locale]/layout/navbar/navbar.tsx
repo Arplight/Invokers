@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import NavIcon from "../../../../../public/logo/navIcon.svg";
 import Button from "@/components/button/button";
+import useScrollHandler from "@/lib/hooks/useScrollHandler";
 const Navbar = () => {
   interface ISection {
     sectionLabel: string;
@@ -12,9 +14,13 @@ const Navbar = () => {
     { sectionLabel: "About Us", sectionPosition: "" },
     { sectionLabel: "Testimonials", sectionPosition: "" },
   ];
-
+  const { isTarget } = useScrollHandler(200);
   return (
-    <nav className="sticky top-0 z-50 dark-blue-bg shadow-lg shadow-[#5380ea25]">
+    <nav
+      className={`sticky top-0 z-50 duration-700  backdrop-blur-md bg-[#0a1e40e7]  ${
+        isTarget && " shadow-lg shadow-[#5380ea25]"
+      }`}
+    >
       <ul className="flex items-center container m-auto py-2 justify-between">
         <li key={"logo"}>
           <Image src={NavIcon} width={50} height={50} alt="navbar-icon" />

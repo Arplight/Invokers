@@ -1,11 +1,11 @@
-import Radial1 from "../../../../public/assets/Rectangle 75.svg";
-import Radial2 from "../../../../public/assets/Rectangle 76.svg";
-import Ellipse from "../../../../public/assets/Subtract.svg";
-import Logo from "../../../../public/logo/Logo.svg";
+import Radial1 from "../../../../../public/assets/Rectangle 75.svg";
+import Radial2 from "../../../../../public/assets/Rectangle 76.svg";
+import Ellipse from "../../../../../public/assets/Subtract.svg";
+import Logo from "../../../../../public/logo/Logo.svg";
 import Image from "next/image";
 import Button from "@/components/button/button";
-import Mouse from "../../../../public/assets/mouse.svg";
-import Star from "../../../../public/assets/Star.svg";
+import Mouse from "../../../../../public/assets/mouse.svg";
+import Star from "../../../../../public/assets/Star.svg";
 import MainSection from "@/components/main_section/mainSection";
 
 const Intro = () => {
@@ -15,9 +15,24 @@ const Intro = () => {
       radial2={Radial2}
       containerStyle="flex flex-col items-center justify-center gap-6 h-[85vh]"
       stars={[
-        { icon: Star, position: "bottom-[50%] left-[6%]" },
-        { icon: Star, position: "top-[42%] left-[60%]" },
-        { icon: Star, position: "bottom-[14%] right-[3%]" },
+        {
+          icon: Star,
+          position: "bottom-[50%] left-[6%]",
+          size: 60,
+          isAnimated: true,
+        },
+        {
+          icon: Star,
+          position: "top-[42%] left-[60%]",
+          size: 60,
+          isAnimated: true,
+        },
+        {
+          icon: Star,
+          position: "bottom-[14%] right-[3%]",
+          size: 60,
+          isAnimated: true,
+        },
       ]}
     >
       <div className="w-[700px] h-[300px] relative">

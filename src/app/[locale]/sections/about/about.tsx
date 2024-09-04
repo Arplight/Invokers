@@ -1,7 +1,7 @@
-import Butterfly from "../../../../public/assets/butterfly.svg";
-import About1 from "../../../../public/assets/about1.svg";
-import About2 from "../../../../public/assets/about2.svg";
-import About3 from "../../../../public/assets/about3.svg";
+import Butterfly from "../../../../../public/assets/butterfly.svg";
+import About1 from "../../../../../public/assets/about1.svg";
+import About2 from "../../../../../public/assets/about2.svg";
+import About3 from "../../../../../public/assets/about3.svg";
 import MainSection from "@/components/main_section/mainSection";
 import Image from "next/image";
 

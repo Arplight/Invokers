@@ -5,6 +5,12 @@
   margin: 0px;
   box-sizing: border-box;
 }
+body {
+  background-color: $darkBlueColor;
+}
+.container {
+  padding-inline: 18px;
+}
 html {
   font-size: 36px;
 }
@@ -38,11 +44,9 @@ h3 {
 }
 .large-paragraph {
   font-size: $largeParagraph;
-  font-weight: 400;
 }
 .small-paragraph {
   font-size: $smallParagraph;
-  font-weight: 400;
 }
 
 // Colors
@@ -73,5 +77,3 @@ h3 {
 .dark-blue-bg {
   background-color: $darkBlueColor;
 }
-
-

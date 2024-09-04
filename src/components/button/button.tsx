@@ -48,7 +48,13 @@ const Button: FC<IButton> = ({
   return (
     <>
       {withLink ? (
-        <Link href={`/${currentLocale}/${withLink}`}>{buttonContent}</Link>
+        withLink.startsWith("https") ? (
+          <a href={withLink} target="_blank">
+            {buttonContent}
+          </a>
+        ) : (
+          <Link href={`/${currentLocale}/${withLink}`}>{buttonContent}</Link>
+        )
       ) : (
         buttonContent
       )}
