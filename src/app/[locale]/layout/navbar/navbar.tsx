@@ -14,7 +14,7 @@ const Navbar = () => {
     { sectionLabel: "About Us", sectionPosition: "" },
     { sectionLabel: "Testimonials", sectionPosition: "" },
   ];
-  const { isTarget } = useScrollHandler(200);
+  const { isTarget } = useScrollHandler(300);
   return (
     <nav
       className={`sticky top-0 z-50 duration-700  backdrop-blur-md bg-[#0a1e40e7]  ${
