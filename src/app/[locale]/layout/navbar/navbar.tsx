@@ -15,6 +15,7 @@ const Navbar = () => {
     { sectionLabel: "Testimonials", sectionPosition: "" },
   ];
   const { isTarget } = useScrollHandler(300);
+  // git test
   return (
     <nav
       className={`sticky top-0 z-50 duration-700  backdrop-blur-md bg-[#0a1e40e7]  ${
