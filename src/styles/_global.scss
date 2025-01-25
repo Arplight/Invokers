@@ -13,6 +13,7 @@ body {
 }
 html {
   font-size: 36px;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -76,4 +77,22 @@ h3 {
 }
 .dark-blue-bg {
   background-color: $darkBlueColor;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: $secondaryColor;
+}
+*::-moz-scrollbar-track {
+  background-color: $secondaryColor;
+}
+::-webkit-scrollbar-thumb {
+  background: $primaryColor;
+  border-radius: 8px;
+}
+*::-moz-scrollbar-thumb {
+  background-color: $primaryColor;
 }

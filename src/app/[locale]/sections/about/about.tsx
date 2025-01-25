@@ -17,7 +17,7 @@ const About = () => {
     { aboutIcon: About3, aboutLabel: "Experience", aboutCount: "7years" },
   ];
   return (
-    <MainSection isOdd={false}>
+    <MainSection isOdd={false} sectionId="about">
       <div className="text-center w-4/5 mx-auto">
         <h2 className="primary-color">Thank you for your interest in us!</h2>
         <h1 className="mt-2 text-white">

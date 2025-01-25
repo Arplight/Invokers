@@ -40,7 +40,12 @@ const Advantages = () => {
     },
   ];
   return (
-    <MainSection radial1={Radial3} radial2={Radial4} isOdd={false}>
+    <MainSection
+      radial1={Radial3}
+      radial2={Radial4}
+      isOdd={false}
+      sectionId="expertise"
+    >
       <div className="text-center w-4/5 mx-auto">
         <h2 className="primary-color">Why choose us</h2>
         <h1 className="text-white">for your web development needs?</h1>

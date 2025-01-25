@@ -4,16 +4,16 @@ import Ellipse from "../../../../../public/assets/Subtract.svg";
 import Logo from "../../../../../public/logo/Logo.svg";
 import Image from "next/image";
 import Button from "@/components/button/button";
-import Mouse from "../../../../../public/assets/mouse.svg";
 import Star from "../../../../../public/assets/Star.svg";
 import MainSection from "@/components/main_section/mainSection";
-
+import Mouse from "../../../../../public/assets/mouse.svg";
 const Intro = () => {
   return (
     <MainSection
+      sectionId="intro"
       radial1={Radial1}
       radial2={Radial2}
-      containerStyle="flex flex-col items-center justify-center gap-6 h-[85vh]"
+      containerStyle="flex flex-col items-center justify-center gap-6 h-[70vh] 2xl:h-[80vh]"
       stars={[
         {
           icon: Star,
@@ -58,15 +58,22 @@ const Intro = () => {
           Are you facing difficulties with your website? Do you have a website
           but lack traffic? No need to worry.
         </p>
-        <Button buttonLabel="get started" isPrimary={false} withStyle="mt-2" />
+        <Button
+          buttonLabel="Get started"
+          isPrimary={false}
+          withStyle="mt-2"
+          withLink="#contact"
+        />
       </div>
-      <Image
-        src={Mouse}
-        alt="mouse"
-        width={40}
-        height={40}
-        className="mouse mt-2"
-      />
+      <a href="#about" className="relative">
+        <Image
+          src={Mouse}
+          alt="mouse"
+          width={40}
+          height={40}
+          className="mouse mt-2"
+        />
+      </a>
     </MainSection>
   );
 };

@@ -2,5 +2,9 @@
   "Home": {
     "title": "welcome"
   },
+  "navbar": {
+    "english": "English",
+    "arabic": "Arabic"
+  },
   "Download": {}
 }

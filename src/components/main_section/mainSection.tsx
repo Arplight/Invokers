@@ -15,6 +15,7 @@ interface IMainSection {
   radial1?: string;
   radial2?: string;
   stars?: Star[];
+  sectionId?: string;
 }
 const MainSection: FC<IMainSection> = ({
   withStyle,
@@ -24,10 +25,12 @@ const MainSection: FC<IMainSection> = ({
   radial2,
   stars,
   children,
+  sectionId = undefined,
 }) => {
   return (
     <section
-      className={`relative py-6 overflow-hidden ${
+      id={sectionId}
+      className={`relative py-6 lg:py-8 overflow-hidden ${
         isOdd ? "dark-blue-bg" : "blue-bg"
       }  ${withStyle ? withStyle : ""}`}
     >

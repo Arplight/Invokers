@@ -59,6 +59,7 @@ const Testimonials = () => {
   ];
   return (
     <MainSection
+      sectionId="testimonials"
       radial1={Radial3}
       radial2={Radial4}
       isOdd={false}

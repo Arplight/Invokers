@@ -59,7 +59,7 @@ const Portfolio = () => {
     },
   ];
   return (
-    <MainSection>
+    <MainSection sectionId="portfolio">
       <div className="flex flex-col items-center">
         <h1 className="text-white ">Our Portfolio</h1>
         <Image src={Underline} alt="underline" />

@@ -28,6 +28,7 @@ const Services = () => {
   ];
   return (
     <MainSection
+      sectionId="services"
       containerStyle="flex gap-2"
       stars={[
         {

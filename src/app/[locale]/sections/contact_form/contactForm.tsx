@@ -23,7 +23,7 @@ const ContactForm = () => {
   });
 
   return (
-    <MainSection containerStyle="flex gap-2">
+    <MainSection containerStyle="flex gap-2" sectionId="contact">
       <span className="w-1/2 relative">
         <Image src={Contact} fill alt="contact" />
       </span>
