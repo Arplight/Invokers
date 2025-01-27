@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Nunito, Tajawal } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import "../../styles/main.scss";
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800", "900", "1000"],
+});
+const tajawal = Tajawal({
+  subsets: ["arabic"],
+  weight: ["200", "400", "500", "700", "800", "900"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +29,7 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
-      <body className={nunito.className}>
+      <body className={locale === "en" ? nunito.className : tajawal.className}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

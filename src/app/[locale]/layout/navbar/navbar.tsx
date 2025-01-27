@@ -8,18 +8,20 @@ import { useEffect, useState } from "react";
 import { IoLanguage } from "react-icons/io5";
 import LangMenu from "./LangMenu";
 import Styles from "./navbar.module.scss";
+import { useTranslations } from "next-intl";
 const Navbar = () => {
   const [currentSection, setCurrentSection] = useState<string | null>(null);
+  const t = useTranslations("navbar");
   interface ISection {
     sectionLabel: string;
     sectionId: string;
   }
   const sections: ISection[] = [
-    { sectionLabel: "About Us", sectionId: "about" },
-    { sectionLabel: "Services", sectionId: "services" },
-    { sectionLabel: "Expertise", sectionId: "expertise" },
-    { sectionLabel: "Portfolio", sectionId: "portfolio" },
-    { sectionLabel: "Testimonials", sectionId: "testimonials" },
+    { sectionLabel: t("about"), sectionId: "about" },
+    { sectionLabel: t("services"), sectionId: "services" },
+    { sectionLabel: t("expertise"), sectionId: "expertise" },
+    { sectionLabel: t("portfolio"), sectionId: "portfolio" },
+    { sectionLabel: t("testimonials"), sectionId: "testimonials" },
   ];
 
   const { isTarget } = useScrollHandler(300);
@@ -84,7 +86,7 @@ const Navbar = () => {
             </span>
             <span>
               <Button
-                buttonLabel="Contact-Us"
+                buttonLabel={t("contactUs")}
                 isPrimary={true}
                 withLink="#contact"
               />

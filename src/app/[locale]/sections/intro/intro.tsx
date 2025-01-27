@@ -7,7 +7,9 @@ import Button from "@/components/button/button";
 import Star from "../../../../../public/assets/Star.svg";
 import MainSection from "@/components/main_section/mainSection";
 import Mouse from "../../../../../public/assets/mouse.svg";
-const Intro = () => {
+import { getTranslations } from "next-intl/server";
+const Intro = async () => {
+  const t = await getTranslations("intro");
   return (
     <MainSection
       sectionId="intro"
@@ -54,12 +56,9 @@ const Intro = () => {
         />
       </div>
       <div className="w-1/3 text-center">
-        <p className="large-paragraph paragraph-light">
-          Are you facing difficulties with your website? Do you have a website
-          but lack traffic? No need to worry.
-        </p>
+        <p className="large-paragraph paragraph-light">{t("message")}</p>
         <Button
-          buttonLabel="Get started"
+          buttonLabel={t("button")}
           isPrimary={false}
           withStyle="mt-2"
           withLink="#contact"

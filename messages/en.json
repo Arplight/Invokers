@@ -3,8 +3,28 @@
     "title": "welcome"
   },
   "navbar": {
+    "about": "About Us",
+    "services": "Services",
+    "expertise": "Expertise",
+    "portfolio": "Portfolio",
+    "testimonials": "Testimonials",
     "english": "English",
-    "arabic": "Arabic"
+    "arabic": "Arabic",
+    "contactUs": "Contact-us"
   },
+  "intro": {
+    "message": "Are you facing difficulties with your website? Do you need a website created or maintained, or are you struggling with low traffic? No need to worry.",
+    "button": "Get started"
+  },
+  "about": {
+    "sectionTitle": "Thank you for your interest in us!",
+    "sectionDescription": "Founded over 7 years ago, RR Technologies is now the main web design and web development agency in Bangladesh.",
+    "paragraph1": "Technology and business fused together can bear fruitful results talking in terms of business flourishment and success. And this is what exactly we aim to deliver to our esteemed clients, offering our mix of reliability, capability, and longevity to get your website blossoming. We at RR Technologies excel in the area of digital marketing, web software, web development, web designing, and other web solutions that you may consider availing for your website growth.",
+    "paragraph2": "Are you facing difficulties with your website? Do you have a website but lack traffic? No need to worry. We at RR Technologies use our technological expertise amalgamated with our experience to scoop out the right potion of success for your firm. We are highly passionate about our work and leave no stones unturned to delight our customers with high-quality work and efficient project management that comes as a surprise bearing bounteous outcomes. Owing to the years of expertise in web development and web designing, our in-house professionals have been highly successful in catering projects. May it be your small size or large-scale business; we excel in providing you with the best interactive surfaces.",
+    "projects": "Projects",
+    "clients": "Clients",
+    "experience": "Experience"
+  },
+
   "Download": {}
 }
