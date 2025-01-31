@@ -6,20 +6,23 @@ import * as Yup from "yup";
 import Field from "@/components/field/field";
 import Button from "@/components/button/button";
 import Image from "next/image";
+import { useTranslations } from "next-intl"; 
 
 const ContactForm = () => {
+  const t = useTranslations("ContactForm"); 
+
   // Validation schema using Yup
   const validationSchema = Yup.object().shape({
     username: Yup.string()
-      .min(2, "Name must be at least 2 characters")
-      .required("Name is required"),
+      .min(2, t("form.name.errors.min")) 
+      .required(t("form.name.errors.required")), 
     companyname: Yup.string().optional(),
     email: Yup.string()
-      .email("Invalid email address")
-      .required("Email is required"),
+      .email(t("form.email.errors.invalid")) 
+      .required(t("form.email.errors.required")), 
     message: Yup.string()
-      .min(10, "Message must be at least 10 characters")
-      .required("Message is required"),
+      .min(10, t("form.message.errors.min")) 
+      .required(t("form.message.errors.required")), 
   });
 
   return (
@@ -29,13 +32,10 @@ const ContactForm = () => {
       </span>
       <span className="w-1/2">
         <div className="bg-white p-4 rounded-md mx-4">
-          <h1 className="primary-color mb-1">Register interest</h1>
+          <h1 className="primary-color mb-1">{t("title")}</h1>{" "}
+          {/* Translated title */}
           <p className="small-paragraph blue-color text-justify">
-            Use the form below to contact us. Please be as detailed and precise
-            as possible. Include your industry and any specific requests. To
-            help us get to know and serve you better, we thank you for first
-            giving us a good description of who you are. You can also send an
-            email, call us or send us a WhatsApp to make an appointment.
+            {t("description")} {/* Translated description */}
           </p>
           <Formik
             initialValues={{
@@ -52,39 +52,39 @@ const ContactForm = () => {
             {({ isValid, dirty }) => (
               <Form className="mt-4">
                 <Field
-                  fieldLabel="Name"
-                  fieldPlaceholder="Enter your name"
+                  fieldLabel={t("form.name.label")} // Translated label
+                  fieldPlaceholder={t("form.name.placeholder")} // Translated placeholder
                   fieldName="username"
                   fieldType="text"
                   isRequired={true}
                   autoComplete="username"
                 />
                 <Field
-                  fieldLabel="Company"
-                  fieldPlaceholder="Enter your company name"
+                  fieldLabel={t("form.company.label")} // Translated label
+                  fieldPlaceholder={t("form.company.placeholder")} // Translated placeholder
                   fieldName="companyname"
                   fieldType="text"
                   isRequired={false}
                   autoComplete="organization"
                 />
                 <Field
-                  fieldLabel="Email address"
-                  fieldPlaceholder="Enter your email address"
+                  fieldLabel={t("form.email.label")} // Translated label
+                  fieldPlaceholder={t("form.email.placeholder")} // Translated placeholder
                   fieldName="email"
                   fieldType="email"
                   isRequired={true}
                   autoComplete="email"
                 />
                 <Field
-                  fieldLabel="Message"
-                  fieldPlaceholder="Your message here"
+                  fieldLabel={t("form.message.label")} // Translated label
+                  fieldPlaceholder={t("form.message.placeholder")} // Translated placeholder
                   fieldName="message"
                   fieldType="textarea"
                   isRequired={true}
                   autoComplete="off"
                 />
                 <Button
-                  buttonLabel="Submit"
+                  buttonLabel={t("button.submit")} // Translated button label
                   isPrimary={true}
                   isRounded={true}
                   isDisabled={!isValid || !dirty}

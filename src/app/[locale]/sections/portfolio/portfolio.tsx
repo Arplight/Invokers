@@ -4,8 +4,11 @@ import Image from "next/image";
 import ProjectImage from "../../../../../public/assets/projectCard.png";
 import Underline from "../../../../../public/assets/underline.svg";
 import CategoryList from "./components/categoryList";
+import { getTranslations } from "next-intl/server"; // Import getTranslations
 
-const Portfolio = () => {
+const Portfolio = async () => {
+  const t = await getTranslations("Portfolio"); // Use getTranslations
+
   const projectsMock = [
     {
       name: "Shawerma",
@@ -58,10 +61,12 @@ const Portfolio = () => {
       link: "https://shawermakrakow.com/KlubHaus/",
     },
   ];
+
   return (
     <MainSection sectionId="portfolio">
       <div className="flex flex-col items-center">
-        <h1 className="text-white ">Our Portfolio</h1>
+        <h1 className="text-white">{t("title")}</h1>{" "}
+        {/* Use translated title */}
         <Image src={Underline} alt="underline" />
       </div>
       <div className="flex gap-4 mt-8">

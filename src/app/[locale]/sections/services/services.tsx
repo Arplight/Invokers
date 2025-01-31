@@ -8,22 +8,25 @@ import Service2 from "../../../../../public/assets/service2";
 import Service3 from "../../../../../public/assets/service3";
 import Service4 from "../../../../../public/assets/service4";
 import ServiceCard from "@/components/service_card/serviceCard";
+import { getTranslations } from "next-intl/server";
 
-const Services = () => {
+const Services = async () => {
+  const t = await getTranslations("services_section");
+
   interface IServiceCard {
     serviceIcon: ReactNode;
     serviceLabel: string;
   }
   const services: IServiceCard[] = [
-    { serviceIcon: <Service1 />, serviceLabel: "Web Design & Web Development" },
-    { serviceIcon: <Service2 />, serviceLabel: "E-commerce Solutions" },
+    { serviceIcon: <Service1 />, serviceLabel: t("web_design") },
+    { serviceIcon: <Service2 />, serviceLabel: t("ecommerce") },
     {
       serviceIcon: <Service3 />,
-      serviceLabel: "Customized application development",
+      serviceLabel: t("custom_apps"),
     },
     {
       serviceIcon: <Service4 />,
-      serviceLabel: "Search Engine Optimization & Digital Marketing",
+      serviceLabel: t("seo_marketing"),
     },
   ];
   return (
@@ -52,7 +55,7 @@ const Services = () => {
       ]}
     >
       <span className="w-full md:w-1/2">
-        <h2 className="primary-color">Services we offer </h2>
+        <h2 className="primary-color">{t("title")}</h2>
         <h1 className="mt-2 text-white text-justify z-2 relative">
           We believe in true partnership and thus get our{" "}
           <span className="fuchsia-color">customers</span> and a bang for their

@@ -11,6 +11,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { Key } from "react";
 
 interface ITestimonials {
   name: string;
@@ -19,44 +21,19 @@ interface ITestimonials {
   image: string;
   id: number;
 }
+
 const Testimonials = () => {
-  const testimonialsData: ITestimonials[] = [
-    {
-      name: "Muhammad",
-      feedback: "Outstanding experience",
+  const t = useTranslations("Testimonials"); // Use useTranslations
+
+  const testimonialsData: ITestimonials[] = t
+    .raw("testimonials")
+    .map((testimonial: ITestimonials, index: Key) => ({
+      ...testimonial,
       link: "https://wjfbsebhgb.com",
       image: "",
-      id: 0,
-    },
-    {
-      name: "Muhammad",
-      feedback: "Outstanding experience",
-      link: "https://wjfbsebhgb.com",
-      image: "",
-      id: 1,
-    },
-    {
-      name: "Muhammad",
-      feedback: "Outstanding experience",
-      link: "https://wjfbsebhgb.com",
-      image: "",
-      id: 2,
-    },
-    {
-      name: "Muhammad",
-      feedback: "Outstanding experience",
-      link: "https://wjfbsebhgb.com",
-      image: "",
-      id: 3,
-    },
-    {
-      name: "Muhammad",
-      feedback: "Outstanding experience",
-      link: "https://wjfbsebhgb.com",
-      image: "",
-      id: 4,
-    },
-  ];
+      id: index,
+    }));
+
   return (
     <MainSection
       sectionId="testimonials"
@@ -71,7 +48,8 @@ const Testimonials = () => {
           alt="start-quote"
           className="absolute left-0 top-0"
         />
-        <h1 className="text-white ">Testimonials</h1>
+        <h1 className="text-white">{t("title")}</h1>{" "}
+        {/* Use translated title */}
         <Image
           src={EndQuote}
           alt="end-quote"

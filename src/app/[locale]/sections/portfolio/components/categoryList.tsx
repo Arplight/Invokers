@@ -2,23 +2,28 @@
 import { FC, useState } from "react";
 import Arrow from "../../../../../../public/assets/Arrow.svg";
 import Image from "next/image";
+import { useTranslations } from "next-intl"; 
+
 type TCategory = {
   categoryName: string;
   categoryId: number;
 };
 
 const CategoryList: FC = () => {
+  const t = useTranslations("CategoryList"); // Use useTranslations
   const [activeCategory, setActiveCategory] = useState<number>(0);
-  // data
+
   const categories: TCategory[] = [
-    { categoryName: "Ecommerce", categoryId: 0 },
-    { categoryName: "Landing-page", categoryId: 1 },
-    { categoryName: "Personal portfolio", categoryId: 2 },
-    { categoryName: "Wordpress", categoryId: 3 },
+    { categoryName: t("categories.ecommerce"), categoryId: 0 },
+    { categoryName: t("categories.landingPage"), categoryId: 1 },
+    { categoryName: t("categories.personalPortfolio"), categoryId: 2 },
+    { categoryName: t("categories.wordpress"), categoryId: 3 },
   ];
+
   const categoryHandler = (currentId: number) => {
     setActiveCategory(currentId);
   };
+
   return (
     <ul>
       {categories.map((category) => (

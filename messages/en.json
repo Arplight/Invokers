@@ -25,6 +25,109 @@
     "clients": "Clients",
     "experience": "Experience"
   },
-
+  "services_section": {
+    "title": "Services we offer",
+    "description": "We believe in true partnership and thus get our customers and a bang for their bucks. There are various areas in which we function, here are a few of them:",
+    "web_design": "Web Design & Web Development",
+    "ecommerce": "E-commerce Solutions",
+    "custom_apps": "Customized application development",
+    "seo_marketing": "Search Engine Optimization & Digital Marketing"
+  },
+  "Advantages": {
+    "title": "Why choose us",
+    "subtitle": "for your web development needs?",
+    "description": "We have passion and love for what we do & we don’t believe in cutting corners and setting wrong expectations. We aim at improving with each passing day and showcase what we actually are in reality, and we do not pretend in any circumstances. There are multiple reasons that will make you fall for us for availing top-notch web development services. Here are a few of them",
+    "advantages": [
+      {
+        "title": "Experience",
+        "description": "Experience counts is a common saying, and hiring us means hiring professionals who have years of experience to add on to their kitty to get your projects falling at the right place. Also, we have a streamlined project management system to cater to your project requisites. Getting connected with us allows you to browse over a large talent pool who can get your task accomplished within fixed deadlines."
+      },
+      {
+        "title": "Dedicated team",
+        "description": "Everyone has their own cup of tea to drink, and thus we do not mix up the different areas of functionality. We have dedicated teams for designing and graphics. While our web developers get the designing part done, we have our own graphic designing team that handles all the quality imagery part for a successful website."
+      },
+      {
+        "title": "Rapid turnaround time",
+        "description": "We aim at delivering quality work within fixed deadlines and thus are committed to delivering solutions when our clients need them without making them wait for it and extend beyond the fixed time frame. We chalk out our plans accordingly and also regularly update our clients regarding the progress to get what you desire. We give ears to your vision."
+      },
+      {
+        "title": "Competitive pricing",
+        "description": "Pricing is one crucial factor that every business owner considers while hiring a web development company. We are the best in the market and offer competitive pricing to our clients meeting all the demands of the clients with higher levels of efficiency."
+      }
+    ]
+  },
+  "Portfolio": {
+    "title": "Our Portfolio"
+  },
+  "CategoryList": {
+    "categories": {
+      "ecommerce": "Ecommerce",
+      "landingPage": "Landing-page",
+      "personalPortfolio": "Personal portfolio",
+      "wordpress": "Wordpress"
+    }
+  },
+  "Testimonials": {
+    "title": "Testimonials",
+    "testimonials": [
+      {
+        "name": "Muhammad",
+        "feedback": "Outstanding experience"
+      },
+      {
+        "name": "Muhammad",
+        "feedback": "Outstanding experience"
+      },
+      {
+        "name": "Muhammad",
+        "feedback": "Outstanding experience"
+      },
+      {
+        "name": "Muhammad",
+        "feedback": "Outstanding experience"
+      },
+      {
+        "name": "Muhammad",
+        "feedback": "Outstanding experience"
+      }
+    ]
+  },
+  "ContactForm": {
+    "title": "Register interest",
+    "description": "Use the form below to contact us. Please be as detailed and precise as possible. Include your industry and any specific requests. To help us get to know and serve you better, we thank you for first giving us a good description of who you are. You can also send an email, call us or send us a WhatsApp to make an appointment.",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter your name",
+        "errors": {
+          "min": "Name must be at least 2 characters",
+          "required": "Name is required"
+        }
+      },
+      "company": {
+        "label": "Company",
+        "placeholder": "Enter your company name"
+      },
+      "email": {
+        "label": "Email address",
+        "placeholder": "Enter your email address",
+        "errors": {
+          "invalid": "Invalid email address",
+          "required": "Email is required"
+        }
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your message here",
+        "errors": {
+          "min": "Message must be at least 10 characters",
+          "required": "Message is required"
+        }
+      }
+    },
+    "button": {
+      "submit": "Submit"
+    }
+  },
   "Download": {}
 }
