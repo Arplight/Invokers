@@ -9,8 +9,10 @@ import { IoLanguage } from "react-icons/io5";
 import LangMenu from "./LangMenu";
 import Styles from "./navbar.module.scss";
 import { useTranslations } from "next-intl";
+import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const [currentSection, setCurrentSection] = useState<string | null>(null);
+  const [menuIsOpened, setMenuIsOpened] = useState<boolean>(false);
   const t = useTranslations("navbar");
   interface ISection {
     sectionLabel: string;
@@ -38,14 +40,17 @@ const Navbar = () => {
     window.addEventListener("scroll", locationHandler);
     return () => window.removeEventListener("scroll", locationHandler);
   }, []);
+  const menuHandler = () => {
+    setMenuIsOpened((prev) => !prev);
+  };
   return (
     <header
       className={`sticky top-0 z-50 duration-700  backdrop-blur-md bg-[#0a1e40e7]  border-b border-[#5380ea1e] ${
         isTarget && " shadow-lg shadow-[#5380ea25]"
       }`}
     >
-      <nav>
-        <ul className="flex items-center container m-auto py-1.5 justify-between">
+      <nav className="container m-auto relative">
+        <ul className="flex items-center  py-1.5 justify-between">
           <li key={"logo"}>
             <a href="#intro" aria-label="intro">
               <Image
@@ -57,7 +62,7 @@ const Navbar = () => {
               />
             </a>
           </li>
-          <li key={"pages"}>
+          <li key={"pages"} className="hidden md:list-item">
             <ul className="flex gap-2">
               {sections.map((section, index) => (
                 <li key={index}>
@@ -75,7 +80,6 @@ const Navbar = () => {
               ))}
             </ul>
           </li>
-
           <li
             className="leading-[18px] flex items-center gap-2"
             key={"contact-button"}
@@ -84,14 +88,42 @@ const Navbar = () => {
               <IoLanguage size={24} fill="#fff" />
               <LangMenu />
             </span>
-            <span>
+            <span className="hidden md:inline">
               <Button
                 buttonLabel={t("contactUs")}
                 isPrimary={true}
                 withLink="#contact"
               />
             </span>
+            <span className="inline md:hidden">
+              <button
+                onClick={menuHandler}
+                aria-label="menu_toggler"
+                role="button"
+              >
+                <GiHamburgerMenu size={26} fill="#fff" />
+              </button>
+            </span>
           </li>
+        </ul>
+        <ul
+          className={`md:hidden absolute w-full h-max p-2 bg-[#0a1e40] duration-300 inset-0  rounded-b-sm border border-[#5380ea1e] border-t-0 ${
+            isTarget ? "shadow-lg shadow-[#5380ea25]" : ""
+          }  ${menuIsOpened ? "top-[100%]" : "top-[-500%]"}`}
+        >
+          {sections.map((section, index) => (
+            <li key={index} className="mb-1">
+              <a
+                className={`large-paragraph paragraph-light hover:text-[#5380ea] duration-300 flex ${
+                  currentSection === section.sectionId ? "nav-active" : ""
+                } `}
+                aria-label={section.sectionLabel}
+                href={`#${section.sectionId}`}
+              >
+                {section.sectionLabel}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
