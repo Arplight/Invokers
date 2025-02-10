@@ -23,7 +23,7 @@ const About = async () => {
 
   return (
     <MainSection isOdd={false} sectionId="about">
-      <div className="text-center w-4/5 mx-auto">
+      <div className="text-center w-full md:w-4/5 md:mx-auto">
         <h2 className="primary-color">{t("sectionTitle")}</h2>
         <h1 className="mt-2 text-white">
           Founded over 7 years ago, RR Technologies is now the main{" "}
@@ -31,11 +31,11 @@ const About = async () => {
           <span className="primary-color">web development</span> agency in
           Bangladesh.
         </h1>
-        <p className="paragraph-light large-paragraph mt-2">
+        <p className="paragraph-light large-paragraph mt-2 text-justify">
           {t("paragraph1")}
         </p>
       </div>
-      <div className="mt-8 flex gap-2">
+      <div className="mt-8 flex flex-col-reverse md:flex-row gap-2">
         <span className="w-full md:w-1/2">
           <p className="paragraph-light large-paragraph text-justify">
             {t("paragraph2")}
@@ -45,7 +45,7 @@ const About = async () => {
           <Image src={Butterfly} fill alt="about-us" />
         </span>
       </div>
-      <ul className="flex justify-evenly mt-12">
+      <ul className="flex flex-wrap gap-12 justify-evenly mt-12">
         {about.map((aboutItem, index) => (
           <li key={index} className="flex flex-col gap-0.5 items-center">
             <Image

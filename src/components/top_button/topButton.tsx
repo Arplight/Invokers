@@ -19,7 +19,7 @@ const TopButton = () => {
       type="button"
       aria-label="navigate to top"
     >
-      <IoIosArrowUp size={28} />
+      <IoIosArrowUp className="w-[22px] h-[22px] md:w-[28px] md:h-[28px]" />
     </button>
   );
 };

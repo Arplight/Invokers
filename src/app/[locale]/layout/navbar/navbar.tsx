@@ -10,6 +10,7 @@ import LangMenu from "./LangMenu";
 import Styles from "./navbar.module.scss";
 import { useTranslations } from "next-intl";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { MdDoubleArrow } from "react-icons/md";
 const Navbar = () => {
   const [currentSection, setCurrentSection] = useState<string | null>(null);
   const [menuIsOpened, setMenuIsOpened] = useState<boolean>(false);
@@ -106,25 +107,44 @@ const Navbar = () => {
             </span>
           </li>
         </ul>
-        <ul
-          className={`md:hidden absolute w-full h-max p-2 bg-[#0a1e40] duration-300 inset-0  rounded-b-sm border border-[#5380ea1e] border-t-0 ${
-            isTarget ? "shadow-lg shadow-[#5380ea25]" : ""
-          }  ${menuIsOpened ? "top-[100%]" : "top-[-500%]"}`}
+        <div
+          className={`h-max duration-300 absolute inset-0 overflow-hidden top-[100%] p-2 pt-0 ${
+            menuIsOpened ? "visible opacity-100" : "invisible opacity-0"
+          }`}
         >
-          {sections.map((section, index) => (
-            <li key={index} className="mb-1">
-              <a
-                className={`large-paragraph paragraph-light hover:text-[#5380ea] duration-300 flex ${
-                  currentSection === section.sectionId ? "nav-active" : ""
-                } `}
-                aria-label={section.sectionLabel}
-                href={`#${section.sectionId}`}
-              >
-                {section.sectionLabel}
-              </a>
-            </li>
-          ))}
-        </ul>
+          <ul
+            className={`p-2 bg-[#0a1e40] duration-300 rounded-b-sm border border-[#5380ea1e] border-t-0 w-full  ${
+              isTarget ? "shadow-lg shadow-[#5380ea25]" : ""
+            } ${
+              menuIsOpened
+                ? "transform translate-y-[-5%]"
+                : "transform -translate-y-full"
+            }`}
+          >
+            {sections.map((section, index) => (
+              <li key={index} className="mb-1">
+                <a
+                  className={`large-paragraph paragraph-light hover:text-[#5380ea] duration-300 flex items-center gap-0.5 ${
+                    currentSection === section.sectionId ? "nav-active" : ""
+                  } `}
+                  aria-label={section.sectionLabel}
+                  href={`#${section.sectionId}`}
+                >
+                  <MdDoubleArrow
+                    size={18}
+                    fill="#5380ea"
+                    className={`duration-300 ${
+                      currentSection === section.sectionId
+                        ? "visible opacity-100 "
+                        : "invisible opacity-0"
+                    }`}
+                  />
+                  {section.sectionLabel}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </nav>
     </header>
   );
