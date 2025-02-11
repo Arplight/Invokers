@@ -41,10 +41,10 @@ const Advantages = async () => {
       isOdd={false}
       sectionId="expertise"
     >
-      <div className="text-center w-4/5 mx-auto">
+      <div className="text-center w-full md:w-4/5 mx-auto">
         <h2 className="primary-color">{t("title")}</h2>
         <h1 className="text-white">{t("subtitle")}</h1>
-        <p className="paragraph-light large-paragraph mt-2">
+        <p className="paragraph-light text-justify large-paragraph mt-2">
           {t("description")}
         </p>
       </div>

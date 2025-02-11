@@ -10,7 +10,7 @@ const TopButton = () => {
   return (
     <button
       onClick={elevator}
-      className={`fixed ltr:right-2 rtl:left-2 bottom-2 bg-[#5380ea] text-white p-0.5 rounded-sm duration-700 ${
+      className={`fixed z-50 ltr:right-2 rtl:left-2 bottom-2 bg-[#5380ea] text-white p-0.5 rounded-sm duration-700 ${
         isTarget
           ? "translate-x-0 opacity-1 visible"
           : "ltr:translate-x-10 rtl:-translate-x-10 opacity-0 invisible"

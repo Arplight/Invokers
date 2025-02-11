@@ -32,11 +32,11 @@ const Services = async () => {
   return (
     <MainSection
       sectionId="services"
-      containerStyle="flex gap-2"
+      containerStyle="flex flex-col lg:flex-row gap-2"
       stars={[
         {
           icon: EllipseRed,
-          position: "bottom-[60%] left-[3%]",
+          position: "bottom-[60%] left-[2%]",
           size: 15,
           isAnimated: false,
         },
@@ -48,13 +48,13 @@ const Services = async () => {
         },
         {
           icon: EllipseYellow,
-          position: "bottom-[5%] right-[3%]",
+          position: "bottom-[5%] right-[2%]",
           size: 15,
           isAnimated: false,
         },
       ]}
     >
-      <span className="w-full md:w-1/2">
+      <span className="w-full lg:w-1/2">
         <h2 className="primary-color">{t("title")}</h2>
         <h1 className="mt-2 text-white text-justify z-2 relative">
           We believe in true partnership and thus get our{" "}
@@ -63,10 +63,10 @@ const Services = async () => {
           them:
         </h1>
       </span>
-      <span className="w-full md:w-1/2">
-        <ul className="grid grid-cols-2 grid-rows-2 gap-y-2">
+      <span className="w-full lg:w-1/2">
+        <ul className="flex flex-wrap w-full">
           {services.map((service, index) => (
-            <li key={index} className="flex justify-center">
+            <li key={index} className="flex justify-center w-full sm:w-1/2 p-1">
               <ServiceCard
                 cardLabel={service.serviceLabel}
                 cardIcon={service.serviceIcon}

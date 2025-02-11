@@ -35,13 +35,13 @@ const About = async () => {
           {t("paragraph1")}
         </p>
       </div>
-      <div className="mt-8 flex flex-col-reverse md:flex-row gap-2">
+      <div className="mt-8 flex flex-col-reverse md:flex-row gap-x-2 gap-y-4">
         <span className="w-full md:w-1/2">
           <p className="paragraph-light large-paragraph text-justify">
             {t("paragraph2")}
           </p>
         </span>
-        <span className="w-full md:w-1/2 h-[300px] relative ">
+        <span className="w-full grow min-h-[300px] md:w-1/2  relative ">
           <Image src={Butterfly} fill alt="about-us" />
         </span>
       </div>
