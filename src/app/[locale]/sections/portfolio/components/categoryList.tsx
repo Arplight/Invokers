@@ -2,7 +2,7 @@
 import { FC, useState } from "react";
 import Arrow from "../../../../../../public/assets/Arrow.svg";
 import Image from "next/image";
-import { useTranslations } from "next-intl"; 
+import { useTranslations } from "next-intl";
 
 type TCategory = {
   categoryName: string;
@@ -25,15 +25,15 @@ const CategoryList: FC = () => {
   };
 
   return (
-    <ul>
+    <ul className="flex md:flex-col gap-2 w-full md:justify-center overflow-x-scroll md:overflow-x-visible">
       {categories.map((category) => (
         <li
           key={category.categoryId}
-          className="mb-2 cursor-pointer flex gap-1 items-center"
+          className="cursor-pointer flex gap-1 items-center mb-1"
           onClick={() => categoryHandler(category.categoryId)}
         >
           <p
-            className={`large-paragraph duration-300 ${
+            className={`large-paragraph duration-300 text-nowrap font-bold ${
               category.categoryId === activeCategory
                 ? "primary-color"
                 : "paragraph-light "
@@ -42,13 +42,19 @@ const CategoryList: FC = () => {
             {category.categoryName}
           </p>
           <span
-            className={`duration-300 ${
+            className={`duration-300 hidden md:inline  ${
               category.categoryId === activeCategory
                 ? "opacity-100 translate-x-0"
-                : "opacity-0 translate-x-10"
+                : "opacity-0 translate-x-10 rtl:-translate-x-10"
             }`}
           >
-            <Image src={Arrow} alt="arrow" width={24} height={24} />
+            <Image
+              src={Arrow}
+              alt="arrow"
+              width={24}
+              height={24}
+              className="rtl:rotate-180"
+            />
           </span>
         </li>
       ))}

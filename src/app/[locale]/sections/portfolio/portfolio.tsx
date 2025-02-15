@@ -67,17 +67,25 @@ const Portfolio = async () => {
       <div className="flex flex-col items-center">
         <h1 className="text-white">{t("title")}</h1>{" "}
         {/* Use translated title */}
-        <Image src={Underline} alt="underline" />
+        <Image
+          src={Underline}
+          width={180}
+          alt="underline"
+          className="sm:w-[190px] md:w-[210px]"
+        />
       </div>
-      <div className="flex gap-4 mt-8">
+      <div className="flex flex-col md:flex-row gap-4 mt-8">
         <span className="w-full md:w-1/5 flex justify-center">
           <CategoryList />
         </span>
         <span className="w-full md:w-4/5">
-          <ul className="flex flex-wrap gap-2">
+          <ul className="flex flex-wrap">
             {projectsMock &&
               projectsMock.map((project, index) => (
-                <li key={index}>
+                <li
+                  key={index}
+                  className="w-1/2 md:w-1/3 lg:w-1/4 aspect-square p-0.5"
+                >
                   <ProjectCard
                     projectImage={project.image}
                     projectLink={project.link}

@@ -18,9 +18,15 @@ const TestimonialsCard: FC<ITestimonials> = ({
       <a
         href={feedbackLink}
         target="_blank"
-        className="absolute top-[5px] right-[5px]"
+        className="absolute top-[5px] ltr:right-[5px] rtl:left-[5px]"
       >
-        <Image src={Link} width={24} height={24} alt="testimonial-link" />
+        <Image
+          src={Link}
+          width={24}
+          height={24}
+          alt="testimonial-link"
+          className="rtl:rotate-[270deg]"
+        />
       </a>
 
       <div className="flex items-center gap-0.5">

@@ -6,32 +6,35 @@ import * as Yup from "yup";
 import Field from "@/components/field/field";
 import Button from "@/components/button/button";
 import Image from "next/image";
-import { useTranslations } from "next-intl"; 
+import { useTranslations } from "next-intl";
 
 const ContactForm = () => {
-  const t = useTranslations("ContactForm"); 
+  const t = useTranslations("ContactForm");
 
   // Validation schema using Yup
   const validationSchema = Yup.object().shape({
     username: Yup.string()
-      .min(2, t("form.name.errors.min")) 
-      .required(t("form.name.errors.required")), 
+      .min(2, t("form.name.errors.min"))
+      .required(t("form.name.errors.required")),
     companyname: Yup.string().optional(),
     email: Yup.string()
-      .email(t("form.email.errors.invalid")) 
-      .required(t("form.email.errors.required")), 
+      .email(t("form.email.errors.invalid"))
+      .required(t("form.email.errors.required")),
     message: Yup.string()
-      .min(10, t("form.message.errors.min")) 
-      .required(t("form.message.errors.required")), 
+      .min(10, t("form.message.errors.min"))
+      .required(t("form.message.errors.required")),
   });
 
   return (
-    <MainSection containerStyle="flex gap-2" sectionId="contact">
-      <span className="w-1/2 relative">
+    <MainSection
+      containerStyle="flex flex-col lg:flex-row gap-4"
+      sectionId="contact"
+    >
+      <span className="w-full lg:w-1/2 relative min-h-[400px]">
         <Image src={Contact} fill alt="contact" />
       </span>
-      <span className="w-1/2">
-        <div className="bg-white p-4 rounded-md mx-4">
+      <span className="w-full lg:w-1/2">
+        <div className="bg-white p-4 rounded-md w-full xl:w-4/5 ms-auto">
           <h1 className="primary-color mb-1">{t("title")}</h1>{" "}
           {/* Translated title */}
           <p className="small-paragraph blue-color text-justify">

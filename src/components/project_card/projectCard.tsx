@@ -14,7 +14,7 @@ const ProjectCard: FC<IProjectCard> = ({
 }) => {
   return (
     <div
-      className={`w-[200px] h-[200px] overflow-hidden relative rounded-sm ${Styles.projectCard}`}
+      className={`w-full h-full overflow-hidden relative rounded-sm ${Styles.projectCard}`}
     >
       <div className="w-full h-full absolute flex items-center justify-center z-[10]">
         <Button buttonLabel="Visit" isPrimary={false} withLink={projectLink} />

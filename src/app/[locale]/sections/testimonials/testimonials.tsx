@@ -57,9 +57,16 @@ const Testimonials = () => {
         />
       </div>
       <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        slidesPerView={3}
+        spaceBetween={10}
+        slidesPerView={1}
+        breakpoints={{
+          1280: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 2,
+          },
+        }}
         autoplay={{
           delay: 4500,
           disableOnInteraction: false,
@@ -69,14 +76,7 @@ const Testimonials = () => {
       >
         {testimonialsData &&
           testimonialsData.map((testimonial) => (
-            <SwiperSlide
-              key={testimonial.id}
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
+            <SwiperSlide key={testimonial.id}>
               <TestimonialsCard
                 userName={testimonial.name}
                 userFeedback={testimonial.feedback}

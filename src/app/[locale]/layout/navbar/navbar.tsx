@@ -108,12 +108,12 @@ const Navbar = () => {
           </li>
         </ul>
         <div
-          className={`h-max duration-300 absolute inset-0 overflow-hidden top-[100%] p-2 pt-0 ${
+          className={`block md:hidden h-max duration-500 absolute inset-0 overflow-hidden top-[100%] p-2 pt-0 ${
             menuIsOpened ? "visible opacity-100" : "invisible opacity-0"
           }`}
         >
           <ul
-            className={`p-2 bg-[#0a1e40] duration-300 rounded-b-sm border border-[#5380ea1e] border-t-0 w-full  ${
+            className={`p-2 bg-[#0a1e40] duration-500 rounded-b-sm border border-[#5380ea1e] border-t-0 w-full  ${
               isTarget ? "shadow-lg shadow-[#5380ea25]" : ""
             } ${
               menuIsOpened
