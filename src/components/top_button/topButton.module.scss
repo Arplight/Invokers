@@ -1,0 +1,6 @@
+@use "../../styles/variables" as *;
+
+.button {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+}

@@ -54,6 +54,9 @@ h3 {
 .primary-color {
   color: $primaryColor;
 }
+.secondary-color {
+  color: $secondaryColor;
+}
 .blue-color {
   color: $blueColor;
 }
@@ -71,6 +74,9 @@ h3 {
 }
 .primary-bg {
   background-color: $primaryColor;
+}
+.secondary-bg {
+  background-color: $secondaryColor;
 }
 .blue-bg {
   background-color: $blueColor;

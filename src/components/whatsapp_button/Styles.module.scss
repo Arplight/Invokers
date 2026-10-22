@@ -1,3 +1,5 @@
+@use "../../styles/variables" as *;
+
 .whats-float {
   display: flex;
   position: fixed;
@@ -6,8 +8,8 @@
   bottom: 50%;
   transform: translateY(50%);
   overflow: hidden;
-  background-color: #25d366;
-  color: #fff;
+  background-color: $whatsappColor;
+  color: $secondaryColor;
   z-index: 10;
   transition: all 0.5s ease-in-out;
   vertical-align: middle;
@@ -29,9 +31,13 @@
   }
   :global {
     span {
-      color: white;
+      color: $secondaryColor;
       font-size: 15px;
       line-height: 18px;
     }
   }
+}
+
+.icon {
+  fill: $secondaryColor;
 }

@@ -1,13 +1,15 @@
+@use "./variables" as *;
+
 // Logo animations
 @keyframes lightAnimation {
   0% {
-    filter: drop-shadow(2px 4px 6px #5380ea36);
+    filter: drop-shadow(2px 4px 6px $primarySoftColor);
   }
   50% {
-    filter: drop-shadow(2px 4px 6px #5380ea);
+    filter: drop-shadow(2px 4px 6px $primaryColor);
   }
   100% {
-    filter: drop-shadow(2px 4px 6px #5380ea36);
+    filter: drop-shadow(2px 4px 6px $primarySoftColor);
   }
 }
 .hero-logo {
@@ -39,15 +41,15 @@
 @keyframes starAnimation {
   0% {
     transform: scale(1);
-    filter: drop-shadow(2px 4px 6px #5380ea36);
+    filter: drop-shadow(2px 4px 6px $primarySoftColor);
   }
   50% {
     transform: scale(1.4);
-    filter: drop-shadow(2px 4px 6px #5380ea);
+    filter: drop-shadow(2px 4px 6px $primaryColor);
   }
   100% {
     transform: scale(1);
-    filter: drop-shadow(2px 4px 6px #5380ea36);
+    filter: drop-shadow(2px 4px 6px $primarySoftColor);
   }
 }
 .star {

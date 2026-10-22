@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { FC } from "react";
 import Link from "../../../public/assets/External_link.svg";
+import Styles from "./testimonialsCard.module.scss";
+
 interface ITestimonials {
   userImage: string;
   userName: string;
@@ -14,7 +16,7 @@ const TestimonialsCard: FC<ITestimonials> = ({
   feedbackLink,
 }) => {
   return (
-    <div className="relative rounded-sm border-2 border-[#ffffff] bg-[#FFFFFF15] p-2 w-full h-[180px]">
+    <div className={`relative rounded-sm p-2 w-full h-[180px] ${Styles.card}`}>
       <a
         href={feedbackLink}
         target="_blank"
@@ -38,7 +40,7 @@ const TestimonialsCard: FC<ITestimonials> = ({
             className="object-center object-cover"
           />
         </div>
-        <b className="text-[#ffffff] large-paragraph">{userName}</b>
+        <b className={`large-paragraph ${Styles.userName}`}>{userName}</b>
       </div>
       <p className="paragraph-light text-justify small-paragraph pl-5">
         {userFeedback && userFeedback.length > 50

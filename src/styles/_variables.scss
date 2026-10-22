@@ -1,12 +1,26 @@
 // Template colors
 $primaryColor: #5380ea;
+$primaryFaintColor: #5380ea1e;
+$primaryGlowColor: #5380ea25;
+$primarySoftColor: #5380ea36;
+$primaryTintColor: #5380ea1c;
+$primaryBorderColor: #5380eab2;
+$primaryFocusColor: #5380ea50;
+$primaryMutedColor: #5380ea70;
 $secondaryColor: #ffffff;
+$secondarySoftColor: #ffffff15;
+$secondaryGlowColor: #ffffff50;
 $paragraphLightColor: #ffffffb0;
 $paragraphDarkColor: #475569;
 $blueColor: #12244f;
 $fuchsiaColor: #d91c5e;
 $darkBlueColor: #0a1e40;
+$darkBlueTransparentColor: #0a1e40e7;
+$fieldDarkBgColor: #2478fe20;
 $dangerColor: #eb5939;
+$whatsappColor: #25d366;
+$overlayColor: rgba(0, 0, 0, 0.507);
+
 // template fonts sizes
 $heroHeading: clamp(0.8rem, 6vw, 1rem);
 $mainHeading: clamp(0.55rem, 6vw, 0.62rem);

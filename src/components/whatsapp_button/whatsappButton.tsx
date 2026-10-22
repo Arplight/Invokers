@@ -12,7 +12,7 @@ const WhatsappButton = () => {
       rel="noopener noreferrer"
       className={Styles["whats-float"]}
     >
-      <FaWhatsapp className="whatsIcon" fill="#ffffff" size={30} />
+      <FaWhatsapp className={Styles.icon} size={30} />
       <span dir="ltr">
         <b>WhatsApp</b>
         <p>{phoneNumber}</p>

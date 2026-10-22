@@ -1,3 +1,5 @@
+@use "../../styles/variables" as *;
+
 .projectCard {
   img {
     transition-duration: 0.3s;
@@ -7,7 +9,7 @@
     transition-duration: 0.3s;
     visibility: hidden;
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: $overlayColor;
   }
   &:hover {
     img {

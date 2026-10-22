@@ -55,7 +55,7 @@ const About = async () => {
               alt="about-icon"
               className="mb-1.5"
             />
-            <h2 className="text-[#ffffff]">{aboutItem.aboutLabel}</h2>
+            <h2 className="secondary-color">{aboutItem.aboutLabel}</h2>
             <p className="large-paragraph paragraph-light">
               {aboutItem.aboutCount}+
             </p>
