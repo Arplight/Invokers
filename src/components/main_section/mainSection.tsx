@@ -17,6 +17,7 @@ interface IMainSection {
   radial2?: string;
   stars?: Star[];
   sectionId?: string;
+  hasBorder?: boolean;
 }
 const MainSection: FC<IMainSection> = ({
   withStyle,
@@ -27,11 +28,12 @@ const MainSection: FC<IMainSection> = ({
   stars,
   children,
   sectionId = undefined,
+  hasBorder = true,
 }) => {
   return (
     <section
       id={sectionId}
-      className={`flex relative py-6 lg:py-8 overflow-hidden scroll-mt-[63px] ${Styles.mainSection} min-h-[95vh] ${
+      className={`flex relative py-6 lg:py-8 overflow-hidden scroll-mt-[63px] ${hasBorder && Styles.mainSectionBorder} min-h-[95vh]  ${
         isOdd ? "dark-blue-bg" : "blue-bg"
       }  ${withStyle ? withStyle : ""}`}
     >

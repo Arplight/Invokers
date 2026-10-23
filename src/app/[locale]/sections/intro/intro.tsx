@@ -1,4 +1,3 @@
-import Radial1 from "../../../../../public/assets/Rectangle 75.svg";
 import Radial2 from "../../../../../public/assets/Rectangle 76.svg";
 import Logo from "../../../../../public/logo/logo.svg";
 import Image from "next/image";

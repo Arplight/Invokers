@@ -129,5 +129,9 @@
       "submit": "Submit"
     }
   },
-  "Download": {}
+  "Download": {},
+  "notFoundPage": {
+    "title": "Oops! This page could not be found.",
+    "button": "Go back"
+  }
 }
