@@ -1,4 +1,4 @@
-import Butterfly from "../../../../../public/assets/butterfly.svg";
+import AboutImage from "../../../../../public/assets/about.svg";
 import About1 from "../../../../../public/assets/about1.svg";
 import About2 from "../../../../../public/assets/about2.svg";
 import About3 from "../../../../../public/assets/about3.svg";
@@ -26,9 +26,8 @@ const About = async () => {
       <div className="text-center w-full md:w-4/5 md:mx-auto">
         <h2 className="primary-color">{t("sectionTitle")}</h2>
         <h1 className="mt-2 text-white">
-          Founded over 7 years ago, RR Technologies is now the main{" "}
-          <span className="fuchsia-color">web design</span> and{" "}
-          <span className="primary-color">web development</span> agency in
+          Founded over 7 years ago, RR Technologies is now the main web design{" "}
+          <span className="accent-color">web development</span> agency in
           Bangladesh.
         </h1>
         <p className="paragraph-light large-paragraph mt-2 text-justify">
@@ -42,7 +41,7 @@ const About = async () => {
           </p>
         </span>
         <span className="w-full grow min-h-[300px] md:w-1/2  relative ">
-          <Image src={Butterfly} fill alt="about-us" />
+          <Image src={AboutImage} fill alt="about-us" />
         </span>
       </div>
       <ul className="flex flex-wrap gap-12 justify-evenly mt-12">

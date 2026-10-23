@@ -1,8 +1,8 @@
 import MainSection from "@/components/main_section/mainSection";
 import { ReactNode } from "react";
-import EllipseRed from "../../../../../public/assets/EllipseRed.svg";
 import EllipseYellow from "../../../../../public/assets/EllipseYellow.svg";
-import EllipseBlue from "../../../../../public/assets/EllipseBlue.svg";
+import EllipseTeal from "../../../../../public/assets/EllipseTeal.svg";
+import EllipseWhite from "../../../../../public/assets/EllipseWhite.svg";
 import Service1 from "../../../../../public/assets/service1";
 import Service2 from "../../../../../public/assets/service2";
 import Service3 from "../../../../../public/assets/service3";
@@ -35,19 +35,19 @@ const Services = async () => {
       containerStyle="flex flex-col lg:flex-row gap-2"
       stars={[
         {
-          icon: EllipseRed,
+          icon: EllipseYellow,
           position: "bottom-[60%] left-[2%]",
           size: 15,
           isAnimated: false,
         },
         {
-          icon: EllipseBlue,
+          icon: EllipseWhite,
           position: "top-[3%] left-[40%]",
           size: 10,
           isAnimated: false,
         },
         {
-          icon: EllipseYellow,
+          icon: EllipseTeal,
           position: "bottom-[5%] right-[2%]",
           size: 15,
           isAnimated: false,
@@ -58,7 +58,7 @@ const Services = async () => {
         <h2 className="primary-color">{t("title")}</h2>
         <h1 className="mt-2 text-white text-justify z-2 relative">
           We believe in true partnership and thus get our{" "}
-          <span className="fuchsia-color">customers</span> and a bang for their
+          <span className="accent-color">customers</span> and a bang for their
           bucks. There are various areas in which we function, here are a few of
           them:
         </h1>

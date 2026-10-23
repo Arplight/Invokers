@@ -2,7 +2,7 @@
 <path d="M-280 0H280V592H-280V0Z" fill="url(#paint0_radial_245_142)"/>
 <defs>
 <radialGradient id="paint0_radial_245_142" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 296) rotate(90) scale(296 280)">
-<stop stop-color="#2478FE"/>
+<stop stop-color="#14b8a6"/>
 <stop offset="1" stop-color="#0A1E40" stop-opacity="0"/>
 </radialGradient>
 </defs>

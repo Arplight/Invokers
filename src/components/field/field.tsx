@@ -42,10 +42,11 @@ const Field: FC<IField> = ({
         placeholder={fieldPlaceholder}
         name={fieldName}
         id={fieldName}
+        rows={5}
         maxLength={fieldMaxLength}
         required={isRequired}
         aria-describedby={`${fieldName}-error`}
-        className={`small-paragraph primary-color p-1 mb-2 rounded-[5px] outline-none duration-300 ${Styles.input} ${
+        className={`small-paragraph paragraph-dark p-1 mb-2 rounded-[5px] outline-none duration-300 ${Styles.input} ${
           isDark ? Styles.inputDark : Styles.inputLight
         }`}
         autoComplete={autoComplete}

@@ -60,8 +60,15 @@ h3 {
 .blue-color {
   color: $blueColor;
 }
+.dark-blue-color {
+  color: $darkBlueColor;
+}
+.accent-color {
+  color: $accentColor;
+}
+
 .fuchsia-color {
-  color: $fuchsiaColor;
+  color: $primaryColor;
 }
 .paragraph-light {
   color: $paragraphLightColor;

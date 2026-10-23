@@ -5,14 +5,15 @@
   border-bottom: 1px solid $primaryFaintColor;
 
   &.scrolled {
-    box-shadow: 0 10px 15px -3px $primaryGlowColor,
+    box-shadow:
+      0 10px 15px -3px $primaryGlowColor,
       0 4px 6px -4px $primaryGlowColor;
   }
 }
 
 .navLink {
   &:hover {
-    color: $primaryColor;
+    color: rgba($primaryColor, 0.8);
   }
 }
 
@@ -22,7 +23,8 @@
   border-top: 0;
 
   &.scrolled {
-    box-shadow: 0 10px 15px -3px $primaryGlowColor,
+    box-shadow:
+      0 10px 15px -3px $primaryGlowColor,
       0 4px 6px -4px $primaryGlowColor;
   }
 }

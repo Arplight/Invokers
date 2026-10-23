@@ -1,6 +1,7 @@
 "use client";
 import MainSection from "@/components/main_section/mainSection";
-import Contact from "../../../../../public/assets/contact.svg";
+// import Contact from "../../../../../public/assets/contact.svg";
+import Contact from "../../../../../public/assets/message.svg";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import Field from "@/components/field/field";
@@ -35,9 +36,9 @@ const ContactForm = () => {
       </span>
       <span className="w-full lg:w-1/2">
         <div className="bg-white p-4 rounded-md w-full xl:w-4/5 ms-auto">
-          <h1 className="primary-color mb-1">{t("title")}</h1>{" "}
+          <h1 className="dark-blue-color mb-1">{t("title")}</h1>{" "}
           {/* Translated title */}
-          <p className="small-paragraph blue-color text-justify">
+          <p className="small-paragraph paragraph-dark text-justify">
             {t("description")} {/* Translated description */}
           </p>
           <Formik

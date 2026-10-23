@@ -27,7 +27,7 @@
   },
   "services_section": {
     "title": "Services we offer",
-    "description": "We believe in true partnership and thus get our customers and a bang for their bucks. There are various areas in which we function, here are a few of them:",
+    "description": "We believe in true partnership and thus get our customers and a bang for their bucks. There are various areas in which we function, here are a few of them",
     "web_design": "Web Design & Web Development",
     "ecommerce": "E-commerce Solutions",
     "custom_apps": "Customized application development",
@@ -35,7 +35,7 @@
   },
   "Advantages": {
     "title": "Why choose us",
-    "subtitle": "for your web development needs?",
+    "subtitle": "for your web development <accent>needs?</accent>",
     "description": "We have passion and love for what we do & we don’t believe in cutting corners and setting wrong expectations. We aim at improving with each passing day and showcase what we actually are in reality, and we do not pretend in any circumstances. There are multiple reasons that will make you fall for us for availing top-notch web development services. Here are a few of them",
     "advantages": [
       {

@@ -69,7 +69,7 @@ const Navbar = () => {
                 <li key={index}>
                   {/* the following condition is not working */}
                   <a
-                    className={`large-paragraph paragraph-light duration-300 flex ${Styles.navLink} ${
+                    className={`large-paragraph paragraph-light font-bold duration-300 flex ${Styles.navLink} ${
                       currentSection === section.sectionId ? "nav-active" : ""
                     } `}
                     aria-label={section.sectionLabel}

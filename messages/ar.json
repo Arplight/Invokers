@@ -27,7 +27,7 @@
   },
   "services_section": {
     "title": "الخدمات التي نقدمها",
-    "description": "We believe in true partnership and thus get our customers and a bang for their bucks. There are various areas in which we function, here are a few of them:",
+    "description": "We believe in true partnership and thus get our customers and a bang for their bucks. There are various areas in which we function, here are a few of them",
     "web_design": "تصميم وتطوير الويب",
     "ecommerce": "حلول التجارة الإلكترونية",
     "custom_apps": "تطوير التطبيقات المخصصة",
@@ -35,7 +35,7 @@
   },
   "Advantages": {
     "title": "لماذا تختارنا",
-    "subtitle": "لاحتياجات تطوير الويب الخاصة بك؟",
+    "subtitle": "لـ<accent>احتياجات</accent> تطوير الويب الخاصة بك<accent>؟</accent>",
     "description": "لدينا شغف وحب لما نقوم به ولا نؤمن بقطع الزوايا ووضع توقعات خاطئة. نهدف إلى التحسن مع مرور كل يوم وإظهار ما نحن عليه في الواقع، ولا نتظاهر في أي ظرف من الظروف. هناك أسباب عديدة ستجعلك تفضلنا للحصول على خدمات تطوير ويب من الدرجة الأولى. إليك بعضًا منها",
     "advantages": [
       {

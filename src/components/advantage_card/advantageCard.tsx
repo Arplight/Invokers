@@ -17,7 +17,7 @@ const AdvantageCard: FC<IAdvantageCard> = ({
       className={`p-2 flex flex-col gap-1 rounded-[10px] items-center w-[300px] h-[400px] duration-300 hover:-translate-y-1 relative z-[10] ${Styles.card}`}
     >
       <Image src={cardIcon} width={50} height={50} alt={cardTitle} />
-      <h2 className="blue-color">{cardTitle}</h2>
+      <h2 className="dark-blue-color">{cardTitle}</h2>
       <p className="small-paragraph paragraph-dark text-justify">
         {cardDescription}
       </p>

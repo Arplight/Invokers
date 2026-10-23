@@ -8,7 +8,7 @@ interface IServiceCard {
 const ServiceCard: FC<IServiceCard> = ({ cardIcon, cardLabel }) => {
   return (
     <div
-      className={`service-card flex flex-col gap-1 p-1 blue-color text-center items-center justify-center w-full h-[200px] rounded-[5px] duration-300 z-10 ${Styles.card}`}
+      className={`service-card flex flex-col gap-1 p-1 dark-blue-color text-center items-center justify-center w-full h-[200px] rounded-[5px] duration-300 z-10 ${Styles.card}`}
       aria-label={cardLabel}
     >
       {cardIcon}

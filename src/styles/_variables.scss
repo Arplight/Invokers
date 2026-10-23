@@ -1,24 +1,39 @@
-// Template colors
-$primaryColor: #5380ea;
-$primaryFaintColor: #5380ea1e;
-$primaryGlowColor: #5380ea25;
-$primarySoftColor: #5380ea36;
-$primaryTintColor: #5380ea1c;
-$primaryBorderColor: #5380eab2;
-$primaryFocusColor: #5380ea50;
-$primaryMutedColor: #5380ea70;
+// Raseen Brand Colors — Midnight Navy + Teal
+
+// Primary: Raseen Teal (#14B8A6)
+$primaryColor: #14b8a6;
+$primaryFaintColor: #14b8a61e;
+$primaryGlowColor: #14b8a50c;
+$primaryTintColor: #14b8a61c;
+$primaryBorderColor: #14b8a6b2;
+$primaryFocusColor: #14b8a650;
+$primaryMutedColor: #14b8a670;
+
+// Secondary
 $secondaryColor: #ffffff;
 $secondarySoftColor: #ffffff15;
 $secondaryGlowColor: #ffffff50;
-$paragraphLightColor: #ffffffb0;
+
+// Text
+$paragraphLightColor: #cbd5e1;
 $paragraphDarkColor: #475569;
-$blueColor: #12244f;
-$fuchsiaColor: #d91c5e;
-$darkBlueColor: #0a1e40;
-$darkBlueTransparentColor: #0a1e40e7;
-$fieldDarkBgColor: #2478fe20;
-$dangerColor: #eb5939;
+
+// Brand dark colors
+$blueColor: #121f30;
+$darkBlueColor: #101c2c; //dark logo color NAVY
+$darkBlueTransparentColor: #101c2ce7;
+
+//accent colors
+$accentColor: #f4b860;
+
+// Fields
+$fieldDarkBgColor: #14b8a620;
+
+// Semantic colors
+$dangerColor: #b91c1c;
 $whatsappColor: #25d366;
+
+// Overlays
 $overlayColor: rgba(0, 0, 0, 0.507);
 
 // template fonts sizes
