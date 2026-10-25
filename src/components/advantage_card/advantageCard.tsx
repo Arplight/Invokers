@@ -1,9 +1,8 @@
-import Image from "next/image";
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 import Styles from "./advantageCard.module.scss";
 
 interface IAdvantageCard {
-  cardIcon: string;
+  cardIcon: ReactNode;
   cardTitle: string;
   cardDescription: string;
 }
@@ -14,11 +13,13 @@ const AdvantageCard: FC<IAdvantageCard> = ({
 }) => {
   return (
     <div
-      className={`p-2 flex flex-col gap-1 rounded-[10px] items-center w-[300px] h-[400px] duration-300 hover:-translate-y-1 relative z-[10] ${Styles.card}`}
+      className={`p-2 flex flex-col gap-1 rounded-[10px] items-center w-[300px] min-h-[280px] duration-300 hover:-translate-y-1 relative z-[10] text-center ${Styles.card}`}
     >
-      <Image src={cardIcon} width={50} height={50} alt={cardTitle} />
+      <span className={`text-[50px] leading-none ${Styles.icon}`} aria-hidden>
+        {cardIcon}
+      </span>
       <h2 className="dark-blue-color">{cardTitle}</h2>
-      <p className="small-paragraph paragraph-dark text-justify">
+      <p className="small-paragraph paragraph-dark text-balance">
         {cardDescription}
       </p>
     </div>

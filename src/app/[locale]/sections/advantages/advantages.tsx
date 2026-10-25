@@ -1,33 +1,36 @@
 import AdvantageCard from "@/components/advantage_card/advantageCard";
-import Advantage1 from "../../../../../public/assets/advantage1.svg";
-import Advantage2 from "../../../../../public/assets/advantage2.svg";
-import Advantage3 from "../../../../../public/assets/advantage3.svg";
-import Advantage4 from "../../../../../public/assets/advantage4.svg";
 import Radial3 from "../../../../../public/assets/Rectangle 78.svg";
 import MainSection from "@/components/main_section/mainSection";
+import Button from "@/components/button/button";
 import { getTranslations } from "next-intl/server";
+import {
+  MdOutlineFactCheck,
+  MdOutlineGpsFixed,
+  MdOutlineLayers,
+  MdOutlineLightbulb,
+} from "react-icons/md";
 
 const Advantages = async () => {
   const t = await getTranslations("Advantages");
 
   const advantages = [
     {
-      icon: Advantage1,
+      icon: <MdOutlineLightbulb />,
       title: t("advantages.0.title"),
       description: t("advantages.0.description"),
     },
     {
-      icon: Advantage2,
+      icon: <MdOutlineLayers />,
       title: t("advantages.1.title"),
       description: t("advantages.1.description"),
     },
     {
-      icon: Advantage3,
+      icon: <MdOutlineGpsFixed />,
       title: t("advantages.2.title"),
       description: t("advantages.2.description"),
     },
     {
-      icon: Advantage4,
+      icon: <MdOutlineFactCheck />,
       title: t("advantages.3.title"),
       description: t("advantages.3.description"),
     },
@@ -35,14 +38,14 @@ const Advantages = async () => {
 
   return (
     <MainSection radial1={Radial3} isOdd={false} sectionId="expertise">
-      <div className="text-center w-full md:w-4/5 mx-auto">
-        <h2 className="primary-color">{t("title")}</h2>
-        <h1 className="secondary-color">
-          {t.rich("subtitle", {
+      <div className="text-center w-full lg:w-5/6 mx-auto">
+        <h2 className="primary-color">{t("eyebrow")}</h2>
+        <h1 className="secondary-color mt-2 text-balance">
+          {t.rich("title", {
             accent: (chunks) => <span className="accent-color">{chunks}</span>,
           })}
         </h1>
-        <p className="paragraph-light text-justify large-paragraph mt-2">
+        <p className="paragraph-light large-paragraph mt-2 text-balance">
           {t("description")}
         </p>
       </div>
@@ -58,6 +61,14 @@ const Advantages = async () => {
           </li>
         ))}
       </ul>
+
+      <div className="mt-6 flex justify-center">
+        <Button
+          buttonLabel={t("button")}
+          isPrimary={true}
+          withLink="#contact"
+        />
+      </div>
     </MainSection>
   );
 };

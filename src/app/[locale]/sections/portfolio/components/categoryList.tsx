@@ -25,7 +25,7 @@ const CategoryList: FC = () => {
   };
 
   return (
-    <ul className="flex md:flex-col gap-2 w-full md:justify-center overflow-x-scroll md:overflow-x-visible">
+    <ul className="flex md:flex-col gap-2 w-full justify-center flex-wrap md:overflow-x-visible w-fit">
       {categories.map((category) => (
         <li
           key={category.categoryId}

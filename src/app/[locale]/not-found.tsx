@@ -40,11 +40,15 @@ const NotFound = async () => {
         <Image
           src={NotFoundImage}
           alt="not found"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           className="mb-6"
         />
-        <h1 className="font-bold secondary-color">{t("title")}</h1>
+        <h1 className="font-bold secondary-color text-center">
+          {t.rich("title", {
+            br: () => <br />,
+          })}
+        </h1>
         <Button
           buttonLabel={t("button")}
           isPrimary={true}

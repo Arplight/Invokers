@@ -33,11 +33,11 @@ img {
 // Typography
 h1 {
   font-size: $heroHeading;
-  font-weight: 900;
+  font-weight: 1000;
 }
 h2 {
   font-size: $mainHeading;
-  font-weight: 700;
+  font-weight: 800;
 }
 h3 {
   font-size: $subHeading;
@@ -65,10 +65,6 @@ h3 {
 }
 .accent-color {
   color: $accentColor;
-}
-
-.fuchsia-color {
-  color: $primaryColor;
 }
 .paragraph-light {
   color: $paragraphLightColor;

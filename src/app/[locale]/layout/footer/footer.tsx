@@ -68,7 +68,7 @@ const Footer = async () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className={Styles.socialLink}
+                className={`${Styles.socialLink} large-paragraph`}
               >
                 {social.icon}
               </a>

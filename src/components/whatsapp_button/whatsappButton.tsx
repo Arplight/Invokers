@@ -2,7 +2,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import Styles from "./Styles.module.scss";
 
 const WhatsappButton = () => {
-  const phoneNumber = "+20 100 379 3140";
+  const phoneNumber = "+20 101 954 9956";
   const whatsappUrl = `https://wa.me/${phoneNumber.replace(/\D/g, "")}`;
 
   return (
@@ -12,11 +12,11 @@ const WhatsappButton = () => {
       rel="noopener noreferrer"
       className={Styles["whats-float"]}
     >
-      <FaWhatsapp className={Styles.icon} size={30} />
       <span dir="ltr">
         <b>WhatsApp</b>
         <p>{phoneNumber}</p>
       </span>
+      <FaWhatsapp className={Styles.icon} size={30} />
     </a>
   );
 };

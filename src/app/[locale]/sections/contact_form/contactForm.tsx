@@ -35,7 +35,7 @@ const ContactForm = () => {
         <Image src={Contact} fill alt="contact" />
       </span>
       <span className="w-full lg:w-1/2">
-        <div className="bg-white p-4 rounded-md w-full xl:w-4/5 ms-auto">
+        <div className="bg-white p-2.5 md:p-4 rounded-md w-full xl:w-4/5 ms-auto">
           <h1 className="dark-blue-color mb-1">{t("title")}</h1>{" "}
           {/* Translated title */}
           <p className="small-paragraph paragraph-dark text-justify">
