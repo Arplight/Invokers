@@ -46,7 +46,11 @@ const Intro = async () => {
       </div>
       <div className="w-full max-w-3xl text-center lg:w-5/6">
         <h2 className="primary-color mb-2">{t("eyebrow")}</h2>
-        <h1 className="text-white mb-3 text-balance">{t("headline")}</h1>
+        <h1 className="text-white mb-3 text-balance">
+          {t.rich("headline", {
+            br: () => <br />,
+          })}
+        </h1>
         <p className="large-paragraph paragraph-light text-balance">
           {t("message")}
         </p>
