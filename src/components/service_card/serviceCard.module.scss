@@ -1,0 +1,19 @@
+@use "../../styles/variables" as *;
+
+.card {
+  border-top: 8px solid $primaryColor;
+  background-color: $secondaryColor;
+
+  &:hover {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    border-top-color: $secondaryColor;
+    box-shadow: 0 10px 15px -3px $primaryFocusColor,
+      0 4px 6px -4px $primaryFocusColor;
+
+    button {
+      background-color: $secondaryColor;
+      color: $primaryColor;
+    }
+  }
+}

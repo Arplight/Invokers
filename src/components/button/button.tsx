@@ -1,6 +1,7 @@
 import { useLocale } from "next-intl";
 import Link from "next/link";
 import { FC } from "react";
+import Styles from "./button.module.scss";
 
 interface IButton {
   buttonLabel: string;
@@ -27,9 +28,7 @@ const Button: FC<IButton> = ({
   const buttonStyle = `small-paragraph px-3 py-1 duration-300 ${
     isRounded ? "rounded-full" : "rounded-[10px]"
   } ${(isLoading || isDisabled) && "button-disabled"} ${
-    isPrimary
-      ? "primary-bg  text-[#ffffff] hover:shadow-lg hover:shadow-[#5380ea70]"
-      : "bg-transparent text-[#ffffff] border-2"
+    isPrimary ? `primary-bg ${Styles.primary}` : Styles.secondary
   } ${withStyle}`;
 
   const buttonContent = (

@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 //button disabled
 .button-disabled {
   opacity: 0.5 !important;
@@ -5,21 +7,25 @@
 }
 // service card hovering
 .service-card {
-  path,
+  .service-card-icon {
+    color: $primaryColor;
+  }
+
   svg {
-    transition-duration: 0.3s;
+    transition: transform 0.3s ease, color 0.3s ease;
   }
 
   &:hover {
+    .service-card-icon {
+      color: $secondaryColor;
+    }
+
     svg {
       transform: scale(1.1);
-    }
-    path {
-      fill: #ffffff;
     }
   }
 }
 // nav aclive
 .nav-active {
-  color: #5380ea !important;
+  color: $primaryColor !important;
 }

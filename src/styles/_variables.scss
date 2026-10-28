@@ -1,18 +1,47 @@
-// Template colors
-$primaryColor: #5380ea;
+// Raseen Brand Colors — Midnight Navy + Teal
+
+// Primary: Raseen Teal (#14B8A6)
+$primaryColor: #14b8a6;
+$primaryFaintColor: #14b8a61e;
+$primaryGlowColor: #14b8a50c;
+$primaryTintColor: #14b8a61c;
+$primaryBorderColor: #14b8a6b2;
+$primaryFocusColor: #14b8a650;
+$primaryMutedColor: #14b8a670;
+
+// Secondary
 $secondaryColor: #ffffff;
-$paragraphLightColor: #ffffffb0;
+$secondarySoftColor: #ffffff15;
+$secondaryGlowColor: #ffffff50;
+
+// Text
+$paragraphLightColor: #cbd5e1;
 $paragraphDarkColor: #475569;
-$blueColor: #12244f;
-$fuchsiaColor: #d91c5e;
-$darkBlueColor: #0a1e40;
-$dangerColor: #eb5939;
+
+// Brand dark colors
+$blueColor: #121f30;
+$darkBlueColor: #101c2c; //dark logo color NAVY
+$darkBlueTransparentColor: #101c2ce7;
+
+//accent colors
+$accentColor: #f4b860;
+
+// Fields
+$fieldDarkBgColor: #14b8a620;
+
+// Semantic colors
+$dangerColor: #b91c1c;
+$whatsappColor: #25d366;
+
+// Overlays
+$overlayColor: rgba(0, 0, 0, 0.507);
+
 // template fonts sizes
-$heroHeading: clamp(0.8rem, 6vw, 1rem);
-$mainHeading: clamp(0.55rem, 6vw, 0.62rem);
-$subHeading: clamp(0.5rem, 10vw, 0.5rem);
-$largeParagraph: clamp(0.45rem, 10vw, 0.45rem);
-$smallParagraph: clamp(0.4rem, 10vw, 0.4rem);
+$heroHeading: clamp(0.75rem, 4vw, 1rem);
+$mainHeading: clamp(0.5rem, 4vw, 0.57rem);
+$subHeading: clamp(0.45rem, 2vw, 0.5rem);
+$largeParagraph: clamp(0.39rem, 2vw, 0.45rem);
+$smallParagraph: 14px;
 
 // transitions
 $transitionFast: 0.3s;

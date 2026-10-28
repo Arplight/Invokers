@@ -1,0 +1,18 @@
+@use "../../styles/variables" as *;
+
+.primary {
+  color: $secondaryColor;
+  border: 2px solid $primaryColor;
+
+  &:hover {
+    box-shadow:
+      0 10px 15px -3px $primaryMutedColor,
+      0 4px 6px -4px $primaryMutedColor;
+  }
+}
+
+.secondary {
+  background-color: transparent;
+  color: $secondaryColor;
+  border: 2px solid currentColor;
+}

@@ -40,7 +40,7 @@ const Testimonials = () => {
       radial1={Radial3}
       radial2={Radial4}
       isOdd={false}
-      containerStyle="flex flex-col justify-center gap-8 items-center h-[50vh]"
+      containerStyle="flex flex-col justify-center gap-8 items-center h-[50vh] max-w-[370px] sm:max-w-[600px] md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl"
     >
       <div className="relative w-max px-3">
         <Image

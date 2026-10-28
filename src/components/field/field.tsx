@@ -1,5 +1,7 @@
 import { Field as FormikField, ErrorMessage } from "formik";
 import { FC } from "react";
+import Styles from "./field.module.scss";
+
 interface IField {
   fieldLabel: string;
   fieldType: string;
@@ -30,21 +32,22 @@ const Field: FC<IField> = ({
     >
       <label
         htmlFor={fieldName}
-        className={`${isDark ? "text-[#ffffff]" : "text-[#0A1E40]"} font-bold`}
+        className={`${isDark ? Styles.labelDark : Styles.labelLight} font-bold`}
       >
         {fieldLabel} {isRequired && <span className="danger-color">*</span>}
       </label>
       <FormikField
         type={fieldType !== "textarea" ? fieldType : undefined}
-        as = {fieldType === "textarea" ? "textarea" : "input"}
+        as={fieldType === "textarea" ? "textarea" : "input"}
         placeholder={fieldPlaceholder}
         name={fieldName}
         id={fieldName}
+        rows={5}
         maxLength={fieldMaxLength}
         required={isRequired}
         aria-describedby={`${fieldName}-error`}
-        className={`small-paragraph primary-color p-1 mb-2 rounded-[5px] border-2 border-[#5380eab2] outline-none duration-300 focus:shadow-lg focus:shadow-[#5380ea50]  focus:border-[#5380ea] ${
-          isDark ? "bg-[#2478fe20]" : "bg-[#5380ea1c]"
+        className={`small-paragraph paragraph-dark p-1 mb-2 rounded-[5px] outline-none duration-300 ${Styles.input} ${
+          isDark ? Styles.inputDark : Styles.inputLight
         }`}
         autoComplete={autoComplete}
       />

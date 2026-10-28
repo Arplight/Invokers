@@ -1,0 +1,14 @@
+@use "../../styles/variables" as *;
+
+.card {
+  background-color: $secondaryColor;
+
+  &:hover {
+    box-shadow: 0 10px 15px -3px $secondaryGlowColor,
+      0 4px 6px -4px $secondaryGlowColor;
+  }
+}
+
+.icon {
+  color: $primaryColor;
+}

@@ -14,10 +14,10 @@ const tajawal = Tajawal({
 });
 
 export const metadata: Metadata = {
-  title: "Invokers",
+  title: "Raseen",
 
   description:
-    "Invokers - Crafting innovative digital solutions with cutting-edge technologies. Specializing in web development, mobile apps, and custom software services.",
+    "Raseen - Crafting innovative digital solutions with cutting-edge technologies. Specializing in web development, mobile apps, and custom software services.",
 };
 export default async function RootLayout({
   children,

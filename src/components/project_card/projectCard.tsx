@@ -2,6 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import { FC } from "react";
 import Button from "../button/button";
 import Styles from "./projectCard.module.scss";
+
 interface IProjectCard {
   projectImage: StaticImageData;
   projectLink: string;
@@ -23,7 +24,7 @@ const ProjectCard: FC<IProjectCard> = ({
         src={projectImage}
         fill
         alt={projectName}
-        className="object-cover"
+        className="object-cover object-center"
       />
     </div>
   );

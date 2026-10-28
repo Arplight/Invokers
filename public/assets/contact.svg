@@ -1,13 +1,13 @@
 <svg width="505" height="575" viewBox="0 0 505 575" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect width="489" height="489" transform="matrix(-1 0 0 1 499 46)" fill="url(#pattern0_237_5213)"/>
-<circle cx="162" cy="53" r="15" fill="#5380EA"/>
-<circle cx="57" cy="397" r="15" fill="#5380EA"/>
-<circle cx="301" cy="427" r="15" fill="#F0B80D"/>
-<circle cx="10" cy="131" r="10" fill="#F0B80D"/>
-<circle cx="316" cy="565" r="10" fill="#5380EA"/>
-<circle cx="152" cy="348" r="10" fill="#E49192"/>
-<circle cx="495" cy="63" r="10" fill="#F0B80D"/>
-<circle cx="345" cy="10" r="10" fill="#E49192"/>
+<circle cx="162" cy="53" r="15" fill="#14b8a6"/>
+<circle cx="57" cy="397" r="15" fill="#14b8a6"/>
+<circle cx="301" cy="427" r="15" fill="#F4B860"/>
+<circle cx="10" cy="131" r="10" fill="#F4B860"/>
+<circle cx="316" cy="565" r="10" fill="#14b8a6"/>
+<circle cx="152" cy="348" r="10" fill="#FFFFFF"/>
+<circle cx="495" cy="63" r="10" fill="#F4B860"/>
+<circle cx="345" cy="10" r="10" fill="#FFFFFF"/>
 <defs>
 <pattern id="pattern0_237_5213" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_237_5213" transform="scale(0.00109649)"/>

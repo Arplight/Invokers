@@ -1,0 +1,10 @@
+@use "../../styles/variables" as *;
+
+.card {
+  border: 2px solid $secondaryColor;
+  background-color: $secondarySoftColor;
+}
+
+.userName {
+  color: $secondaryColor;
+}

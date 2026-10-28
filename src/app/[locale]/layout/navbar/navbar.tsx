@@ -46,8 +46,8 @@ const Navbar = () => {
   };
   return (
     <header
-      className={`sticky top-0 z-50 duration-700  backdrop-blur-md bg-[#0a1e40e7]  border-b border-[#5380ea1e] ${
-        isTarget && " shadow-lg shadow-[#5380ea25]"
+      className={`sticky top-0 z-50 duration-700 backdrop-blur-md ${Styles.header} ${
+        isTarget ? Styles.scrolled : ""
       }`}
     >
       <nav className="container m-auto relative">
@@ -69,7 +69,7 @@ const Navbar = () => {
                 <li key={index}>
                   {/* the following condition is not working */}
                   <a
-                    className={`large-paragraph paragraph-light hover:text-[#5380ea] duration-300 flex ${
+                    className={`large-paragraph paragraph-light font-bold duration-300 flex ${Styles.navLink} ${
                       currentSection === section.sectionId ? "nav-active" : ""
                     } `}
                     aria-label={section.sectionLabel}
@@ -86,7 +86,7 @@ const Navbar = () => {
             key={"contact-button"}
           >
             <span className={`${Styles.lang} relative`}>
-              <IoLanguage size={24} fill="#fff" />
+              <IoLanguage size={24} className={Styles.iconLight} />
               <LangMenu />
             </span>
             <span className="hidden md:inline">
@@ -102,7 +102,7 @@ const Navbar = () => {
                 aria-label="menu_toggler"
                 role="button"
               >
-                <GiHamburgerMenu size={26} fill="#fff" />
+                <GiHamburgerMenu size={26} className={Styles.iconLight} />
               </button>
             </span>
           </li>
@@ -113,8 +113,8 @@ const Navbar = () => {
           }`}
         >
           <ul
-            className={`p-2 bg-[#0a1e40] duration-500 rounded-b-sm border border-[#5380ea1e] border-t-0 w-full  ${
-              isTarget ? "shadow-lg shadow-[#5380ea25]" : ""
+            className={`p-2 duration-500 rounded-b-sm w-full ${Styles.mobileMenu} ${
+              isTarget ? Styles.scrolled : ""
             } ${
               menuIsOpened
                 ? "transform translate-y-[-5%]"
@@ -124,7 +124,7 @@ const Navbar = () => {
             {sections.map((section, index) => (
               <li key={index} className="mb-1">
                 <a
-                  className={`large-paragraph paragraph-light hover:text-[#5380ea] duration-300 flex items-center gap-0.5 ${
+                  className={`large-paragraph paragraph-light duration-300 flex items-center gap-0.5 ${Styles.navLink} ${
                     currentSection === section.sectionId ? "nav-active" : ""
                   } `}
                   aria-label={section.sectionLabel}
@@ -132,8 +132,7 @@ const Navbar = () => {
                 >
                   <MdDoubleArrow
                     size={18}
-                    fill="#5380ea"
-                    className={`duration-300 ${
+                    className={`${Styles.iconPrimary} duration-300 ${
                       currentSection === section.sectionId
                         ? "visible opacity-100 "
                         : "invisible opacity-0"

@@ -1,0 +1,27 @@
+@use "../../styles/variables" as *;
+
+.labelLight {
+  color: $darkBlueColor;
+}
+
+.labelDark {
+  color: $secondaryColor;
+}
+
+.input {
+  border: 2px solid $primaryBorderColor;
+
+  &:focus {
+    border-color: $primaryColor;
+    box-shadow: 0 10px 15px -3px $primaryFocusColor,
+      0 4px 6px -4px $primaryFocusColor;
+  }
+}
+
+.inputLight {
+  background-color: $primaryTintColor;
+}
+
+.inputDark {
+  background-color: $fieldDarkBgColor;
+}

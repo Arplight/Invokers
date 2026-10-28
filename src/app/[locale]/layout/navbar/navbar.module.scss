@@ -1,6 +1,44 @@
 @use ".././../../../styles/variables" as *;
+
+.header {
+  background-color: $darkBlueTransparentColor;
+  border-bottom: 1px solid $primaryFaintColor;
+
+  &.scrolled {
+    box-shadow:
+      0 10px 15px -3px $primaryGlowColor,
+      0 4px 6px -4px $primaryGlowColor;
+  }
+}
+
+.navLink {
+  &:hover {
+    color: rgba($primaryColor, 0.8);
+  }
+}
+
+.mobileMenu {
+  background-color: $darkBlueColor;
+  border: 1px solid $primaryFaintColor;
+  border-top: 0;
+
+  &.scrolled {
+    box-shadow:
+      0 10px 15px -3px $primaryGlowColor,
+      0 4px 6px -4px $primaryGlowColor;
+  }
+}
+
+.iconLight {
+  fill: $secondaryColor;
+}
+
+.iconPrimary {
+  fill: $primaryColor;
+}
+
 .lang-menu {
-  border: 1px solid #5380ea1e;
+  border: 1px solid $primaryFaintColor;
   border-top: none;
   background-color: $darkBlueColor;
   transition: $transitionFast;
@@ -9,14 +47,14 @@
   z-index: 10;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   width: max-content;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   visibility: hidden;
-  inset: 183% 0px auto auto;
+  inset: 175% 0px auto auto;
   [dir="rtl"] & {
-    inset: 183% auto auto 0px;
+    inset: 175% auto auto 0px;
   }
 }
 .lang:hover {

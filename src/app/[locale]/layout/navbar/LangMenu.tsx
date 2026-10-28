@@ -24,7 +24,7 @@ const LangMenu: React.FC = () => {
 
   const switchLanguage = (locale: string) => {
     if (locale !== currentLocale) {
-      router.replace({ pathname, params }, { locale: locale });
+      router.replace({ pathname }, { locale: locale });
     }
   };
 

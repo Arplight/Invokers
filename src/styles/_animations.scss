@@ -1,15 +1,17 @@
+@use "./variables" as *;
+
 // Logo animations
 @keyframes lightAnimation {
-  0% {
-    filter: drop-shadow(2px 4px 6px #5380ea36);
-  }
-  50% {
-    filter: drop-shadow(2px 4px 6px #5380ea);
-  }
+  0%,
   100% {
-    filter: drop-shadow(2px 4px 6px #5380ea36);
+    filter: drop-shadow(2px 4px 6px rgba($secondaryColor, 0.1));
+  }
+
+  50% {
+    filter: drop-shadow(2px 4px 6px rgba($secondaryColor, 0.3));
   }
 }
+
 .hero-logo {
   animation: lightAnimation 5s ease-in-out infinite;
 }
@@ -35,19 +37,17 @@
 .mouse {
   animation: mouseAnimation linear 5s infinite;
 }
+
 //star
 @keyframes starAnimation {
-  0% {
+  0%,
+  100% {
     transform: scale(1);
-    filter: drop-shadow(2px 4px 6px #5380ea36);
+    filter: drop-shadow(2px 4px 6px rgba($secondaryColor, 0.1));
   }
   50% {
     transform: scale(1.4);
-    filter: drop-shadow(2px 4px 6px #5380ea);
-  }
-  100% {
-    transform: scale(1);
-    filter: drop-shadow(2px 4px 6px #5380ea36);
+    filter: drop-shadow(2px 4px 6px rgba($secondaryColor, 0.3));
   }
 }
 .star {

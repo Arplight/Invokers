@@ -13,46 +13,105 @@
     "contactUs": "Contact-us"
   },
   "intro": {
-    "message": "Are you facing difficulties with your website? Do you need a website created or maintained, or are you struggling with low traffic? No need to worry.",
-    "button": "Get started"
+    "eyebrow": "SOFTWARE DEVELOPMENT AGENCY",
+    "headline": "Your business has enough work.<br></br>Its software should make things easier.",
+    "message": "From customer-facing websites to custom applications and AI-powered tools, Raseen builds digital solutions around the way businesses actually work. We combine development skills, practical problem-solving, and attention to detail to turn requirements into useful software.",
+    "primaryButton": "Start a Project",
+    "secondaryButton": "Explore Our Work"
   },
   "about": {
-    "sectionTitle": "Thank you for your interest in us!",
-    "sectionDescription": "Founded over 7 years ago, RR Technologies is now the main web design and web development agency in Bangladesh.",
-    "paragraph1": "Technology and business fused together can bear fruitful results talking in terms of business flourishment and success. And this is what exactly we aim to deliver to our esteemed clients, offering our mix of reliability, capability, and longevity to get your website blossoming. We at RR Technologies excel in the area of digital marketing, web software, web development, web designing, and other web solutions that you may consider availing for your website growth.",
-    "paragraph2": "Are you facing difficulties with your website? Do you have a website but lack traffic? No need to worry. We at RR Technologies use our technological expertise amalgamated with our experience to scoop out the right potion of success for your firm. We are highly passionate about our work and leave no stones unturned to delight our customers with high-quality work and efficient project management that comes as a surprise bearing bounteous outcomes. Owing to the years of expertise in web development and web designing, our in-house professionals have been highly successful in catering projects. May it be your small size or large-scale business; we excel in providing you with the best interactive surfaces.",
-    "projects": "Projects",
-    "clients": "Clients",
-    "experience": "Experience"
+    "eyebrow": "ABOUT US",
+    "heading": "Different skills. One team working toward a <accent>useful</accent> result.",
+    "paragraphs": [
+      "Raseen brings together developers with different backgrounds, strengths, and project experience to build websites, applications, and digital products.",
+      "Our work spans customer-facing experiences, backend systems, dashboards, booking platforms, SaaS applications, and AI integrations.",
+      "We believe good development starts with understanding what needs to be solved. That means looking beyond the interface, considering how the application will actually be used, and making technical decisions that support the project's goals.",
+      "We are building Raseen around a straightforward idea: create software that serves a real purpose, communicate clearly throughout the process, and take the details seriously."
+    ],
+    "points": [
+      "Understand the problem before deciding how to solve it.",
+      "Choose a technical approach that fits the requirements.",
+      "Keep communication clear throughout development.",
+      "Test functionality instead of relying on appearances.",
+      "Build solutions that can be maintained and improved."
+    ]
   },
   "services_section": {
-    "title": "Services we offer",
-    "description": "We believe in true partnership and thus get our customers and a bang for their bucks. There are various areas in which we function, here are a few of them:",
-    "web_design": "Web Design & Web Development",
-    "ecommerce": "E-commerce Solutions",
-    "custom_apps": "Customized application development",
-    "seo_marketing": "Search Engine Optimization & Digital Marketing"
+    "eyebrow": "WHAT WE DO",
+    "title": "The right solution starts with the right <accent>problem</accent>.",
+    "description": "Every business works differently. We develop websites, applications, and connected systems around your requirements, helping you create better customer experiences and manage everyday work more effectively.",
+    "services": [
+      {
+        "title": "Websites & Landing Pages",
+        "description": "Your website should do more than look good. It should help people understand what you offer, build confidence in your business, and make it easy to get in touch. We build responsive websites and landing pages with clear messaging, thoughtful layouts, and a straightforward user experience.",
+        "capabilities": [
+          "Business websites",
+          "Landing pages",
+          "Multi-page websites",
+          "Responsive design",
+          "Website improvements and maintenance"
+        ],
+        "button": "Discuss Your Website"
+      },
+      {
+        "title": "Custom Web Applications",
+        "description": "When ready-made tools don't fit your process, a custom application can give your team a more suitable way to manage information, coordinate work, and serve customers. We build applications around your requirements, from interactive dashboards to complete business platforms.",
+        "capabilities": [
+          "Admin dashboards",
+          "Customer portals",
+          "Internal business tools",
+          "Management systems",
+          "Custom application development"
+        ],
+        "button": "Build Your Application"
+      },
+      {
+        "title": "Booking & E-commerce Systems",
+        "description": "Give customers an easier way to explore your services, make bookings, submit requests, and interact with your business online. We build digital experiences that connect the customer journey with the systems needed to manage it.",
+        "capabilities": [
+          "Appointment scheduling",
+          "Service-booking platforms",
+          "E-commerce functionality",
+          "Customer account experiences",
+          "Booking and management dashboards"
+        ],
+        "button": "Improve Your Customer Experience"
+      },
+      {
+        "title": "APIs, Integrations & AI",
+        "description": "Disconnected tools and repetitive tasks can create unnecessary work. We integrate applications, connect services, and build AI-powered features where they provide practical value.",
+        "capabilities": [
+          "Third-party API integrations",
+          "Backend development",
+          "Database-backed workflows",
+          "Business process automation",
+          "AI assistants and document-processing tools"
+        ],
+        "button": "Discuss an Integration"
+      }
+    ]
   },
   "Advantages": {
-    "title": "Why choose us",
-    "subtitle": "for your web development needs?",
-    "description": "We have passion and love for what we do & we don’t believe in cutting corners and setting wrong expectations. We aim at improving with each passing day and showcase what we actually are in reality, and we do not pretend in any circumstances. There are multiple reasons that will make you fall for us for availing top-notch web development services. Here are a few of them",
+    "eyebrow": "WHY WORK WITH US",
+    "title": "Good software is about more than writing <accent>code</accent>.",
+    "description": "The details matter: understanding your requirements, choosing the right approach, and checking that everything works together as expected. We aim to keep those details central throughout the project.",
+    "button": "Let's Discuss Your Project",
     "advantages": [
       {
-        "title": "Experience",
-        "description": "Experience counts is a common saying, and hiring us means hiring professionals who have years of experience to add on to their kitty to get your projects falling at the right place. Also, we have a streamlined project management system to cater to your project requisites. Getting connected with us allows you to browse over a large talent pool who can get your task accomplished within fixed deadlines."
+        "title": "Understand Before Building",
+        "description": "We focus on your goals, your users, and the problem you're trying to solve before settling on an implementation."
       },
       {
-        "title": "Dedicated team",
-        "description": "Everyone has their own cup of tea to drink, and thus we do not mix up the different areas of functionality. We have dedicated teams for designing and graphics. While our web developers get the designing part done, we have our own graphic designing team that handles all the quality imagery part for a successful website."
+        "title": "Think Beyond the Interface",
+        "description": "The screens are only one part of an application. We also consider the backend, data, business logic, permissions, and integrations behind the experience."
       },
       {
-        "title": "Rapid turnaround time",
-        "description": "We aim at delivering quality work within fixed deadlines and thus are committed to delivering solutions when our clients need them without making them wait for it and extend beyond the fixed time frame. We chalk out our plans accordingly and also regularly update our clients regarding the progress to get what you desire. We give ears to your vision."
+        "title": "Build with Purpose",
+        "description": "We focus on the functionality your project actually needs rather than adding complexity for its own sake."
       },
       {
-        "title": "Competitive pricing",
-        "description": "Pricing is one crucial factor that every business owner considers while hiring a web development company. We are the best in the market and offer competitive pricing to our clients meeting all the demands of the clients with higher levels of efficiency."
+        "title": "Check the Details",
+        "description": "We verify implemented functionality, investigate unexpected behavior, and address issues discovered during testing."
       }
     ]
   },
@@ -129,5 +188,9 @@
       "submit": "Submit"
     }
   },
-  "Download": {}
+  "Download": {},
+  "notFoundPage": {
+    "title": "Oops!<br></br>This page could not be found.",
+    "button": "Go back"
+  }
 }

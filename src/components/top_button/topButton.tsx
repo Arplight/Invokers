@@ -1,6 +1,7 @@
 "use client";
 import useScrollHandler from "@/lib/hooks/useScrollHandler";
 import { IoIosArrowUp } from "react-icons/io";
+import Styles from "./topButton.module.scss";
 
 const TopButton = () => {
   const { isTarget } = useScrollHandler(300);
@@ -10,7 +11,7 @@ const TopButton = () => {
   return (
     <button
       onClick={elevator}
-      className={`fixed z-50 ltr:right-2 rtl:left-2 bottom-2 bg-[#5380ea] text-white p-0.5 rounded-sm duration-700 ${
+      className={`fixed z-50 ltr:right-2 rtl:left-2 bottom-2 lg:bottom-8 p-0.5 rounded-sm duration-700 ${Styles.button} ${
         isTarget
           ? "translate-x-0 opacity-1 visible"
           : "ltr:translate-x-10 rtl:-translate-x-10 opacity-0 invisible"

@@ -1,15 +1,16 @@
 {
-  "name": "invokers",
+  "name": "Raseen",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "dev:lan": "next dev -H 0.0.0.0"
   },
   "dependencies": {
-    "firebase": "^10.13.0",
     "formik": "^2.4.6",
     "lodash": "^4.17.21",
     "next": "14.2.5",
