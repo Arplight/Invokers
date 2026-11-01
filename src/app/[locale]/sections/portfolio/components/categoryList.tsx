@@ -1,28 +1,39 @@
 "use client";
-import { FC, useState } from "react";
+import { FC } from "react";
 import Arrow from "../../../../../../public/assets/Arrow.svg";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+export type PortfolioCategoryId =
+  | "all"
+  | "saas"
+  | "ai"
+  | "ecommerce"
+  | "landingPage";
+
 type TCategory = {
   categoryName: string;
-  categoryId: number;
+  categoryId: PortfolioCategoryId;
 };
 
-const CategoryList: FC = () => {
-  const t = useTranslations("CategoryList"); // Use useTranslations
-  const [activeCategory, setActiveCategory] = useState<number>(0);
+type CategoryListProps = {
+  activeCategory: PortfolioCategoryId;
+  onCategoryChange: (categoryId: PortfolioCategoryId) => void;
+};
+
+const CategoryList: FC<CategoryListProps> = ({
+  activeCategory,
+  onCategoryChange,
+}) => {
+  const t = useTranslations("CategoryList");
 
   const categories: TCategory[] = [
-    { categoryName: t("categories.ecommerce"), categoryId: 0 },
-    { categoryName: t("categories.landingPage"), categoryId: 1 },
-    { categoryName: t("categories.personalPortfolio"), categoryId: 2 },
-    { categoryName: t("categories.wordpress"), categoryId: 3 },
+    { categoryName: t("categories.all"), categoryId: "all" },
+    { categoryName: t("categories.saas"), categoryId: "saas" },
+    { categoryName: t("categories.ai"), categoryId: "ai" },
+    { categoryName: t("categories.ecommerce"), categoryId: "ecommerce" },
+    { categoryName: t("categories.landingPage"), categoryId: "landingPage" },
   ];
-
-  const categoryHandler = (currentId: number) => {
-    setActiveCategory(currentId);
-  };
 
   return (
     <ul className="flex md:flex-col gap-2 w-full justify-center flex-wrap md:overflow-x-visible w-fit">
@@ -30,7 +41,7 @@ const CategoryList: FC = () => {
         <li
           key={category.categoryId}
           className="cursor-pointer flex gap-1 items-center mb-1"
-          onClick={() => categoryHandler(category.categoryId)}
+          onClick={() => onCategoryChange(category.categoryId)}
         >
           <p
             className={`large-paragraph duration-300 text-nowrap font-bold ${

@@ -120,10 +120,11 @@
   },
   "CategoryList": {
     "categories": {
+      "all": "الكل",
+      "saas": "ساس",
+      "ai": "ذكاء اصطناعي",
       "ecommerce": "متجر إلكتروني",
-      "landingPage": "صفحة هبوط",
-      "personalPortfolio": "معرض اعمال خاص",
-      "wordpress": "ووردبريس"
+      "landingPage": "صفحة هبوط"
     }
   },
   "Testimonials": {

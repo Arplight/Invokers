@@ -120,10 +120,11 @@
   },
   "CategoryList": {
     "categories": {
-      "ecommerce": "Ecommerce",
-      "landingPage": "Landing-page",
-      "personalPortfolio": "Personal portfolio",
-      "wordpress": "Wordpress"
+      "all": "All",
+      "saas": "SaaS",
+      "ai": "AI",
+      "ecommerce": "E-commerce",
+      "landingPage": "Landing Page"
     }
   },
   "Testimonials": {
