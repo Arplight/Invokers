@@ -186,7 +186,8 @@
     },
     "button": {
       "submit": "Submit"
-    }
+    },
+    "success": "Thanks! Your message has been sent. We’ll get back to you soon."
   },
   "Download": {},
   "notFoundPage": {

@@ -1,6 +1,7 @@
 import { useLocale } from "next-intl";
 import Link from "next/link";
 import { FC } from "react";
+import { ClipLoader } from "react-spinners";
 import Styles from "./button.module.scss";
 
 interface IButton {
@@ -25,7 +26,7 @@ const Button: FC<IButton> = ({
   withStyle,
   onClick,
 }) => {
-  const buttonStyle = `small-paragraph px-3 py-1 duration-300 ${
+  const buttonStyle = `small-paragraph px-3 py-1 duration-300 inline-flex items-center justify-center gap-2 ${
     isRounded ? "rounded-full" : "rounded-[10px]"
   } ${(isLoading || isDisabled) && "button-disabled"} ${
     isPrimary ? `primary-bg ${Styles.primary}` : Styles.secondary
@@ -37,10 +38,19 @@ const Button: FC<IButton> = ({
       type={buttonRole}
       role="button"
       aria-label={buttonLabel}
+      aria-busy={isLoading}
       disabled={isDisabled || isLoading}
       onClick={onClick}
     >
-      {buttonLabel}
+      {isLoading ? (
+        <ClipLoader
+          color={isPrimary ? "#ffffff" : "#14b8a6"}
+          size={16}
+          aria-label="Loading"
+        />
+      ) : (
+        buttonLabel
+      )}
     </button>
   );
   const currentLocale = useLocale();
