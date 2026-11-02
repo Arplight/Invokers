@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Logo from "../../../../../public/logo/logo.svg";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { SiUpwork } from "react-icons/si";
 import { getTranslations } from "next-intl/server";
 import Styles from "./footer.module.scss";
+import { RiFiverrLine } from "react-icons/ri";
 
 const Footer = async () => {
   const t = await getTranslations("navbar");
@@ -16,6 +18,16 @@ const Footer = async () => {
   ];
 
   const socialLinks = [
+    {
+      label: "Upwork",
+      href: "https://www.upwork.com/freelancers/~0178d7ba9c03158bcb",
+      icon: <SiUpwork size={18} />,
+    },
+    {
+      label: "Fiverr",
+      href: "https://www.fiverr.com/arplight_music",
+      icon: <RiFiverrLine size={18} />,
+    },
     {
       label: "Facebook",
       href: "https://www.facebook.com/",

@@ -131,24 +131,70 @@
     "title": "اراء العملاء",
     "testimonials": [
       {
-        "name": "محمد",
-        "feedback": "تجربة رائعة"
+        "name": "Upwork Client",
+        "feedback": "I will continue to come to Raseen with my online projects simply because he knows what he's doing and he's very quick to do it. Not to mention he's very professional and understanding. FIVE STARS!!",
+        "link": "https://www.upwork.com/freelancers/~0178d7ba9c03158bcb",
+        "image": "/assets/testimonials/upwork.png"
       },
       {
-        "name": "محمد",
-        "feedback": "تجربة رائعة"
+        "name": "Upwork Client",
+        "feedback": "Raseen worked really fast and was really efficient with his time. He was able to do complex tasks and even with everything I asked for, he over-performed which allowed me to come up with better ideas for my site. I will definitely continue to work with Raseen in the future!",
+        "link": "https://www.upwork.com/freelancers/~0178d7ba9c03158bcb",
+        "image": "/assets/testimonials/upwork.png"
       },
       {
-        "name": "محمد",
-        "feedback": "تجربة رائعة"
+        "name": "Upwork Client",
+        "feedback": "Raseen was working effectively, was clearly communicating and project was completed within agreed time.",
+        "link": "https://www.upwork.com/freelancers/~0178d7ba9c03158bcb",
+        "image": "/assets/testimonials/upwork.png"
       },
       {
-        "name": "محمد",
-        "feedback": "تجربة رائعة"
+        "name": "elevenshadez",
+        "feedback": "Fantastic communication with seller. Very helpful with the process as this was my first time mastering order. The result was amazing! Would love to come back if there's another project I need help mastering again. Very much recommend Raseen to work with on your projects.",
+        "link": "https://www.fiverr.com/arplight_music?public_mode=true",
+        "image": "/assets/testimonials/elevenshadez.jpg"
       },
       {
-        "name": "محمد",
-        "feedback": "تجربة رائعة"
+        "name": "faizan_iqbal2",
+        "feedback": "The seller is of Next Level Expert and did a great job, also cooperated in a professional & calm way.! Definitely Recommended.! Thank you",
+        "link": "https://www.fiverr.com/arplight_music?public_mode=true",
+        "image": "/assets/testimonials/faizan_iqbal2.jpg"
+      },
+      {
+        "name": "thejohngon",
+        "feedback": "Amazing work, a friendly guy, and delivered on time. Thank you!",
+        "link": "https://www.fiverr.com/arplight_music?public_mode=true",
+        "image": "/assets/testimonials/thejohngon.jpg"
+      },
+      {
+        "name": "interbranding",
+        "feedback": "Great and fast job of editing my audio. and in Arabic! thanks for your great work.",
+        "link": "https://www.fiverr.com/arplight_music?public_mode=true",
+        "image": "/assets/testimonials/interbranding.jpg"
+      },
+      {
+        "name": "meganhan0607",
+        "feedback": "Great work! Very quick turnaround!",
+        "link": "https://www.fiverr.com/arplight_music?public_mode=true",
+        "image": "/assets/testimonials/meganhan0607.jpg"
+      },
+      {
+        "name": "bettermarks",
+        "feedback": "Good results, fast and inexpensive, friendly, too. :-)",
+        "link": "https://www.fiverr.com/arplight_music?public_mode=true",
+        "image": "/assets/testimonials/bettermarks.jpg"
+      },
+      {
+        "name": "colevoiceover",
+        "feedback": "Great quality. Thanks very much!",
+        "link": "https://www.fiverr.com/arplight_music?public_mode=true",
+        "image": "/assets/testimonials/colevoiceover.jpg"
+      },
+      {
+        "name": "chaftop",
+        "feedback": "fast and excellent delivery",
+        "link": "https://www.fiverr.com/arplight_music?public_mode=true",
+        "image": "/assets/testimonials/chaftop.jpg"
       }
     ]
   },

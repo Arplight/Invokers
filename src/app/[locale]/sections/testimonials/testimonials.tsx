@@ -18,7 +18,7 @@ interface ITestimonials {
   name: string;
   feedback: string;
   link: string;
-  image: string;
+  image?: string;
   id: number;
 }
 
@@ -29,8 +29,6 @@ const Testimonials = () => {
     .raw("testimonials")
     .map((testimonial: ITestimonials, index: Key) => ({
       ...testimonial,
-      link: "https://wjfbsebhgb.com",
-      image: "",
       id: index,
     }));
 
