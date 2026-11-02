@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Logo from "../../../../../public/logo/logo.svg";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 import { getTranslations } from "next-intl/server";
 import Styles from "./footer.module.scss";
@@ -30,19 +30,19 @@ const Footer = async () => {
     },
     {
       label: "Facebook",
-      href: "https://www.facebook.com/",
+      href: "https://www.facebook.com/profile.php?id=61595725963627&sk=followers",
       icon: <FaFacebookF size={18} />,
     },
-    {
-      label: "Instagram",
-      href: "https://www.instagram.com/",
-      icon: <FaInstagram size={18} />,
-    },
-    {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/",
-      icon: <FaLinkedinIn size={18} />,
-    },
+    // {
+    //   label: "Instagram",
+    //   href: "https://www.instagram.com/",
+    //   icon: <FaInstagram size={18} />,
+    // },
+    // {
+    //   label: "LinkedIn",
+    //   href: "https://www.linkedin.com/",
+    //   icon: <FaLinkedinIn size={18} />,
+    // },
   ];
 
   return (
