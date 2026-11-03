@@ -43,7 +43,7 @@ const Services = async () => {
         },
         {
           icon: EllipseWhite,
-          position: "top-[2%] left-[40%]",
+          position: "top-[1%] left-[50%]",
           size: 10,
           isAnimated: false,
         },

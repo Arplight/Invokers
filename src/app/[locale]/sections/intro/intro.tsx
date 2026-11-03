@@ -17,20 +17,20 @@ const Intro = async () => {
       stars={[
         {
           icon: Star,
-          position: "bottom-[50%] left-[3%]",
-          size: 60,
+          position: "bottom-[46%] left-[3%]",
+          size: 50,
           isAnimated: true,
         },
         {
           icon: Star,
           position: "top-[30%] left-[75%]",
-          size: 60,
+          size: 50,
           isAnimated: true,
         },
         {
           icon: Star,
           position: "bottom-[10%] right-[25%]",
-          size: 60,
+          size: 50,
           isAnimated: true,
         },
       ]}

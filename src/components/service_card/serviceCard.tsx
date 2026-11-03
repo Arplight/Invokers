@@ -16,22 +16,26 @@ const ServiceCard: FC<IServiceCard> = ({
   capabilities,
   buttonLabel,
 }) => {
+  console.log("capabilities: ", capabilities);
   return (
     <div
       className={`service-card flex h-full flex-col gap-1.5 p-2 dark-blue-color w-full rounded-[5px] duration-300 z-10 ${Styles.card}`}
       aria-label={cardLabel}
     >
       <div className="flex flex-col items-center gap-1 text-center">
-        <span className="service-card-icon text-[48px] leading-none" aria-hidden>
+        <span
+          className="service-card-icon text-[48px] leading-none"
+          aria-hidden
+        >
           {cardIcon}
         </span>
         <h3 className="w-full">{cardLabel}</h3>
       </div>
       <p className="small-paragraph grow text-balance">{cardDescription}</p>
       <ul className="flex flex-col gap-0.5 text-start w-full">
-        {capabilities.map((capability) => (
-          <li key={capability} className="small-paragraph">
-            • {capability}
+        {capabilities.map((capability, index) => (
+          <li key={index} className="small-paragraph">
+            <p>• &nbsp;{capability}</p>
           </li>
         ))}
       </ul>

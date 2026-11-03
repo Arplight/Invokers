@@ -6,13 +6,14 @@ import StartQuote from "../../../../../public/assets/startQuote.svg";
 import EndQuote from "../../../../../public/assets/endQuote.svg";
 import TestimonialsCard from "@/components/testimonials_card/testimonialsCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Key } from "react";
+import { Key, useEffect, useState } from "react";
 
 interface ITestimonials {
   name: string;
@@ -22,8 +23,20 @@ interface ITestimonials {
   id: number;
 }
 
+const LARGE_SCREEN_MQ = "(min-width: 1024px)";
+
 const Testimonials = () => {
-  const t = useTranslations("Testimonials"); // Use useTranslations
+  const t = useTranslations("Testimonials");
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia(LARGE_SCREEN_MQ);
+    const sync = () => setIsLargeScreen(media.matches);
+
+    sync();
+    media.addEventListener("change", sync);
+    return () => media.removeEventListener("change", sync);
+  }, []);
 
   const testimonialsData: ITestimonials[] = t
     .raw("testimonials")
@@ -32,13 +45,15 @@ const Testimonials = () => {
       id: index,
     }));
 
+  const effect = isLargeScreen ? "slide" : "fade";
+
   return (
     <MainSection
       sectionId="testimonials"
       radial1={Radial3}
       radial2={Radial4}
       isOdd={false}
-      containerStyle="flex flex-col justify-center gap-8 items-center h-[50vh] max-w-[370px] sm:max-w-[600px] md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl"
+      containerStyle="flex flex-col justify-center gap-4 md:gap-8 items-center h-[50vh] max-w-[370px] sm:max-w-[600px] md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl"
     >
       <div className="relative w-max px-3">
         <Image
@@ -47,7 +62,6 @@ const Testimonials = () => {
           className="absolute left-0 top-0"
         />
         <h1 className="text-white">{t("title")}</h1>{" "}
-        {/* Use translated title */}
         <Image
           src={EndQuote}
           alt="end-quote"
@@ -55,21 +69,24 @@ const Testimonials = () => {
         />
       </div>
       <Swiper
+        key={effect}
         spaceBetween={10}
         slidesPerView={1}
+        effect={effect}
+        fadeEffect={{ crossFade: true }}
         breakpoints={{
-          1280: {
-            slidesPerView: 3,
-          },
           1024: {
             slidesPerView: 2,
+          },
+          1280: {
+            slidesPerView: 3,
           },
         }}
         autoplay={{
           delay: 4500,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay]}
+        modules={[Autoplay, EffectFade]}
         className="mySwiper w-full"
       >
         {testimonialsData &&

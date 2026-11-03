@@ -25,7 +25,7 @@ const PortfolioProjects: FC<PortfolioProjectsProps> = ({ projects }) => {
   }, [activeCategory, projects]);
 
   return (
-    <div className="flex flex-col md:flex-row gap-4 mt-8">
+    <div className="flex flex-col md:flex-row gap-4 mt-4 md:mt-8">
       <span className="w-full md:w-1/5 flex justify-center">
         <CategoryList
           activeCategory={activeCategory}

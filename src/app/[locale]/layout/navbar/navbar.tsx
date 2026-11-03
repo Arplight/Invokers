@@ -38,8 +38,13 @@ const Navbar = () => {
       const location: string | null = window?.location?.hash?.slice(1) ?? null;
       setCurrentSection(location);
     };
-    window.addEventListener("scroll", locationHandler);
-    return () => window.removeEventListener("scroll", locationHandler);
+    locationHandler();
+    window.addEventListener("scroll", locationHandler, { passive: true });
+    window.addEventListener("sectionchange", locationHandler);
+    return () => {
+      window.removeEventListener("scroll", locationHandler);
+      window.removeEventListener("sectionchange", locationHandler);
+    };
   }, []);
   const menuHandler = () => {
     setMenuIsOpened((prev) => !prev);
@@ -123,23 +128,25 @@ const Navbar = () => {
           >
             {sections.map((section, index) => (
               <li key={index} className="mb-1">
-                <a
-                  className={`large-paragraph paragraph-light duration-300 flex items-center gap-0.5 ${Styles.navLink} ${
-                    currentSection === section.sectionId ? "nav-active" : ""
-                  } `}
-                  aria-label={section.sectionLabel}
-                  href={`#${section.sectionId}`}
-                >
-                  <MdDoubleArrow
-                    size={18}
-                    className={`${Styles.iconPrimary} duration-300 ${
-                      currentSection === section.sectionId
-                        ? "visible opacity-100 "
-                        : "invisible opacity-0"
-                    }`}
-                  />
-                  {section.sectionLabel}
-                </a>
+                <button className="flex" onClick={menuHandler}>
+                  <a
+                    className={`large-paragraph paragraph-light duration-300 flex items-center gap-0.5 ${Styles.navLink} ${
+                      currentSection === section.sectionId ? "nav-active" : ""
+                    } `}
+                    aria-label={section.sectionLabel}
+                    href={`#${section.sectionId}`}
+                  >
+                    <MdDoubleArrow
+                      size={18}
+                      className={`${Styles.iconPrimary} duration-300 ${
+                        currentSection === section.sectionId
+                          ? "visible opacity-100 "
+                          : "invisible opacity-0"
+                      }`}
+                    />
+                    {section.sectionLabel}
+                  </a>
+                </button>
               </li>
             ))}
           </ul>
